@@ -5,7 +5,6 @@ import android.os.Message;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
-
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -28,7 +27,6 @@ public class MainActivity extends AppCompatActivity {
         });
         thread1.start();
         thread2.start();
-
     }
 
     Handler mhandler  = new Handler(new Handler.Callback() {

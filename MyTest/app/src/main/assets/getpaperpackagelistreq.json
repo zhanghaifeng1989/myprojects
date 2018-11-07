@@ -1,0 +1,14 @@
+{
+  "PackageName": "string",
+  "UserID": "string",
+  "ContentProviderID": "string",
+  "CurrentContentProviderID": "string",
+  "PostParam": {
+    "page": 0,
+    "count": 0,
+    "sfilter": "string",
+    "filter": {},
+    "sorting": {}
+  },
+  "IsAdmin": true
+}

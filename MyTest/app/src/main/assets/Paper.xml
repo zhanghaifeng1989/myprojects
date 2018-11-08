@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<paper guid="093df5acb5634401bca2792c21a1e235" type="1" name="组卷_app_demo" title="" backgroundaudio="" backgroudaudioseconds="0" times="0" image="" content="" waitseconds="0" listeningscore="0" speakingscore="22" papertemplateid="" papertemplatename="" totalexamtime="508" totalscore="22" IsCustomPaper="True">
+  <areas>
+    <area type="24" title="一、单词音标认读" prompt="根据单词音标认读下列单词。" promptaudio="area_24_audio.mp3" promptaudioseconds="0" index="1" guid="4006e46457874001ae761a0fc117e08a" times="1" presubmitmaxseconds="0" backgroundaudio="area_24_audio.mp3" backgroundaudioseconds="7">
+      <questions>
+        <question guid="91a218fca41d4a5daf188e643f5c7e5d" title="" prompt="" promptaudio="" promptaudioseconds="0" text="" image="" audio="" audioseconds="0" video="" videoseconds="0" times="1" prepareseconds="5" tips="" tipsaudio="" tipsaudioseconds="0" index="1" presubmitmaxseconds="0" newscreen="False" audiotext="" answerseconds="0" waitseconds="0" score="0.5">
+          <contents>
+            <content guid="05af14378099417b85d6c644101cde4a" text="[fri:]" image="" audio="05af14378099417b85d6c644101cde4a_Audio.mp3" audioseconds="0" video="" videoseconds="0" times="1" prepareseconds="5" answerseconds="5" tips="" tipsaudio="" tipsaudioSeconds="0" audiotext="free" index="1" choosetype="1" layout="1" resourcetype="1" score="0.5" presubmitmaxseconds="0">
+              <score content="0.5" />
+              <refrencetexts>
+                <refrencetext index="1" guid="e55c2eeb1aec4fa7a751ca545151cad6" content="free" />
+              </refrencetexts>
+              <options />
+              <answers>
+                <answer index="1" guid="3ea6e6f1605e4739aed202311d6713ad" content="free" audio="" audioseconds="0" />
+              </answers>
+            </content>
+          </contents>
+        </question>
+        <question guid="3ec1f491b1ee43cdba013b66df229840" title="" prompt="" promptaudio="" promptaudioseconds="0" text="" image="" audio="" audioseconds="0" video="" videoseconds="0" times="1" prepareseconds="5" tips="" tipsaudio="" tipsaudioseconds="0" index="2" presubmitmaxseconds="0" newscreen="False" audiotext="" answerseconds="0" waitseconds="0" score="0.5">
+          <contents>
+            <content guid="8bec3748be8441aba0c88d399dc54615" text="[keə(r)]" image="" audio="8bec3748be8441aba0c88d399dc54615_Audio.mp3" audioseconds="0" video="" videoseconds="0" times="1" prepareseconds="5" answerseconds="5" tips="" tipsaudio="" tipsaudioSeconds="0" audiotext="care" index="2" choosetype="1" layout="1" resourcetype="1" score="0.5" presubmitmaxseconds="0">
+              <score content="0.5" />
+              <refrencetexts>
+                <refrencetext index="1" guid="7f88d618291b4a82a15d17944b658ea0" content="care" />
+              </refrencetexts>
+              <options />
+              <answers>
+                <answer index="1" guid="96f8c20c987c4d7abfd860e98a35f839" content="care" audio="" audioseconds="0" />
+              </answers>
+            </content>
+          </contents>
+        </question>
+        <question guid="0e1d379590f94a0b9358830dcb681982" title="" prompt="" promptaudio="" promptaudioseconds="0" text="" image="" audio="" audioseconds="0" video="" videoseconds="0" times="1" prepareseconds="5" tips="" tipsaudio="" tipsaudioseconds="0" index="3" presubmitmaxseconds="0" newscreen="False" audiotext="" answerseconds="0" waitseconds="0" score="0.5">
+          <contents>
+            <content guid="2ccff41b9d7e4ed1993d54fcde45e86a" text="[təˈdeɪ]" image="" audio="2ccff41b9d7e4ed1993d54fcde45e86a_Audio.mp3" audioseconds="0" video="" videoseconds="0" times="1" prepareseconds="5" answerseconds="5" tips="" tipsaudio="" tipsaudioSeconds="0" audiotext="today" index="3" choosetype="1" layout="1" resourcetype="1" score="0.5" presubmitmaxseconds="0">
+              <score content="0.5" />
+              <refrencetexts>
+                <refrencetext index="1" guid="df120832a3524cf98db929ecdc073674" content="today" />
+              </refrencetexts>
+              <options />
+              <answers>
+                <answer index="1" guid="5f9b8dcbfb4f4ea89fbeea81e9e4fcca" content="today" audio="" audioseconds="0" />
+              </answers>
+            </content>
+          </contents>
+        </question>
+        <question guid="70e13614a87c40dfbcbd0ae867c3a764" title="" prompt="" promptaudio="" promptaudioseconds="0" text="" image="" audio="" audioseconds="0" video="" videoseconds="0" times="1" prepareseconds="5" tips="" tipsaudio="" tipsaudioseconds="0" index="4" presubmitmaxseconds="0" newscreen="False" audiotext="" answerseconds="0" waitseconds="0" score="0.5">
+          <contents>
+            <content guid="faa11ab8f6984e5d80358b6b2a5129a3" text="[ik'sperimənt]" image="" audio="faa11ab8f6984e5d80358b6b2a5129a3_Audio.mp3" audioseconds="0" video="" videoseconds="0" times="1" prepareseconds="5" answerseconds="5" tips="" tipsaudio="" tipsaudioSeconds="0" audiotext="experiment" index="4" choosetype="1" layout="1" resourcetype="1" score="0.5" presubmitmaxseconds="0">
+              <score content="0.5" />
+              <refrencetexts>
+                <refrencetext index="1" guid="de525ffcf04f41e4af94332cf3d54559" content="experiment" />
+              </refrencetexts>
+              <options />
+              <answers>
+                <answer index="1" guid="ada997dbfc284ecbaea8bdabbb71e571" content="experiment" audio="" audioseconds="0" />
+              </answers>
+            </content>
+          </contents>
+        </question>
+      </questions>
+    </area>
+    <area type="3" title="二、朗读短文" prompt="请以适当音量、语调、停顿、语音朗读以下课文，你将有时间熟悉屏幕上的课文，并作答题准备。在听到“嘀”的提示音后，请将屏幕上的课文朗读一遍。" promptaudio="area_3_audio.mp3" promptaudioseconds="0" index="2" guid="00b435eafae94d8bb4cf60c65a950597" times="1" presubmitmaxseconds="0" backgroundaudio="area_3_audio.mp3" backgroundaudioseconds="21">
+      <questions>
+        <question guid="65d2d07bdbc84e319d0e816ffde34439" title="" prompt="" promptaudio="" promptaudioseconds="0" text="" image="" audio="" audioseconds="0" video="" videoseconds="0" times="0" prepareseconds="60" tips="" tipsaudio="" tipsaudioseconds="0" index="1" presubmitmaxseconds="0" newscreen="False" audiotext="" answerseconds="60" waitseconds="0" score="10">
+          <contents>
+            <content guid="55abb4de7f29419cbab2d2a424870432" text="My name is Tom, and I'm fifteen. I've been at River School since I was eleven. If I pass my exams next year, I'll stay here until I'm eighteen.&#xD;&#xA;River School is a secondary school, about twenty minutes away from my home by bike. We go to school every weekday from 8:45 a.m to 3:15 p.m. We have a large sports ground for football and tennis, where we can play both during and after school hours. After-school activities, such as sports clubs and language societies, are popular too. During the school year there are usually visits to museums and to camps for activities, such as climbing and walking in the country." image="" audio="55abb4de7f29419cbab2d2a424870432_Audio.mp3" audioseconds="54" video="" videoseconds="54" times="0" prepareseconds="60" answerseconds="60" tips="" tipsaudio="" tipsaudioSeconds="0" audiotext="" index="1" choosetype="1" layout="1" resourcetype="1" score="10" presubmitmaxseconds="0">
+              <score content="10" />
+              <refrencetexts>
+                <refrencetext index="0" guid="a32437485ace4dceacd0b97ee29999ce" content="My name is Tom, and I'm fifteen. I've been at River School since I was eleven. If I pass my exams next year, I'll stay here until I'm eighteen. River School is a secondary school, about twenty minutes away from my home by bike. We go to school every weekday from eight forty five am to three fifteen pm. We have a large sports ground for football and tennis, where we can play both during and after school hours. After school activities, such as sports clubs and language societies, are popular too. During the school year there are usually visits to museums and to camps for activities, such as climbing and walking in the country" />
+              </refrencetexts>
+              <options />
+              <answers />
+            </content>
+          </contents>
+        </question>
+        <question guid="230b3e5eeee749199fc4446f54bf2f19" title="" prompt="" promptaudio="" promptaudioseconds="0" text="" image="" audio="" audioseconds="0" video="" videoseconds="0" times="0" prepareseconds="60" tips="" tipsaudio="" tipsaudioseconds="0" index="2" presubmitmaxseconds="0" newscreen="True" audiotext="" answerseconds="0" waitseconds="0" score="10">
+          <contents>
+            <content guid="a6781c9911bd4f6e9fb01f80c7515379" text="Today is 1st June. We arrived in the French capital, Paris, on 30th May, and we're going to stay till 3rd June. On 30th May we were tired so we relaxed at home. But on 31st May we went to the Museum and had dinner in a French restaurant. The food was delicious! And today we went to the street markets. We did some shopping. We also went to the top of the Eiffel Tower. It was wonderful!" image="" audio="a6781c9911bd4f6e9fb01f80c7515379_Audio.mp3" audioseconds="0" video="" videoseconds="0" times="0" prepareseconds="60" answerseconds="60" tips="" tipsaudio="" tipsaudioSeconds="0" audiotext="Today is June first. We arrived in the French capital, Paris, on May thirtieth, and we're going to stay till June third. On May thirtieth we were tired so we relaxed at home. But on May thirty first we went to the Museum and had dinner in a French restaurant. The food was delicious! And today we went to the street markets. We did some shopping. We also went to the top of the Eiffel Tower. It was wonderful!" index="2" choosetype="1" layout="1" resourcetype="1" score="10" presubmitmaxseconds="0">
+              <score content="10" />
+              <refrencetexts>
+                <refrencetext index="0" guid="04414c0b721a4ce9a1f203aa65f0bdf8" content="Today is June first. We arrived in the French capital, Paris, on May thirtieth, and we're going to stay till June third. On May thirtieth we were tired so we relaxed at home. But on May thirty first we went to the Museum and had dinner in a French restaurant. The food was delicious! And today we went to the street markets. We did some shopping. We also went to the top of the Eiffel Tower. It was wonderful!" />
+              </refrencetexts>
+              <options />
+              <answers>
+                <answer index="0" guid="595d96ad20614fa381b6f404d3dbb564" content="Today is 1st June. We arrived in the French capital, Paris, on 30th May, and we're going to stay till 3rd June. On 30th May we were tired so we relaxed at home. But on 31st May we went to the Museum and had dinner in a French restaurant. The food was delicious! And today we went to the street markets. We did some shopping. We also went to the top of the Eiffel Tower. It was wonderful!" audio="3dece6608b904826a978ffe49f3f3aec_Audio.mp3" audioseconds="0" />
+              </answers>
+            </content>
+          </contents>
+        </question>
+      </questions>
+    </area>
+  </areas>
+  <sections />
+</paper>

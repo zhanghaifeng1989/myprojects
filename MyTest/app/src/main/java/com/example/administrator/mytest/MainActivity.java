@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         thread1.start();
         thread2.start();
 
-//        new Okhttputils().Downloadpaper();
+        new Okhttputils().kaolalogin();
 
 
 //        File file  = new File(Environment.getExternalStorageDirectory()+"/demo");
@@ -65,14 +65,14 @@ public class MainActivity extends AppCompatActivity {
        // new UnzipUtils().UnPackTaskFile(MainActivity.this,"Chivox2016.DON.Exam",Environment.getExternalStorageDirectory()+"/app_demo.task",Environment.getExternalStorageDirectory()+"");
 
 
-
-        try {
-            InputStream is = MainActivity.this.getAssets().open("Paper.xml");
-            XmlToJson xmlToJson = new XmlToJson.Builder(is, null).build();
-            String json = xmlToJson.toString();
-            is.close();
-        } catch (Exception ep) {
-        }
+//
+//        try {
+//            InputStream is = MainActivity.this.getAssets().open("Paper.xml");
+//            XmlToJson xmlToJson = new XmlToJson.Builder(is, null).build();
+//            String json = xmlToJson.toString();
+//            is.close();
+//        } catch (Exception ep) {
+//        }
     }
 
     Handler mhandler  = new Handler(new Handler.Callback() {

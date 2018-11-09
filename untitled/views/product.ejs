@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        <%= title %>
+    </title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+<h1><%= title %> - 产品列表</h1>
+<table border="1" width="80%">
+    <tr>
+        <th>序号</th>
+        <th>名称</th>
+        <th>价格</th>
+    </tr>
+    <%pdts.forEach(function(pdt,index){%>
+    <tr>
+        <td>
+            <%=index+1%>
+        </td>
+        <td>
+            <%=pdt.name%>
+        </td>
+        <td>
+            <%=pdt.price%>
+        </td>
+    </tr>
+    <%});%>
+</table>
+
+<ul>
+    <% for(var i=0; i<pdts.length; i++) {%>
+    <li>
+        <%=pdts[i].name%>
+    </li>
+    <% } %>
+</body>
+
+</html>

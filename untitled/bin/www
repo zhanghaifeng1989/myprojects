@@ -12,7 +12,7 @@ var http = require('http');
  * 从上下文环境中获得监听端口，如果空则3000
  */
 
-var port = normalizePort(process.env.PORT || '3000');
+var port = normalizePort(process.env.PORT || '3001');
 app.set('port', port);
 
 /**

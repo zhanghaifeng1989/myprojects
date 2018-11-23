@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 var request = require('request');
 var data = require('global');
-var wechat = require('../routes/wechat');
+var wechat = require('./wechatutils');
 
 
 
@@ -18,7 +18,10 @@ router.get('/checknet', function(req, res, next) {
     wechat.checknet();
     res.send('checknet');
 });
-
+router.get('/createmenu', function(req, res, next) {
+    wechat.createmenu();
+    res.send('createmenu');
+});
 
 
 // function jobGetAccessToken() {

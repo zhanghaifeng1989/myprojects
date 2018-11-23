@@ -81,6 +81,46 @@ exports.checknet = function () {
     })
 }
 
+exports.createmenu = function () {
+
+    var jsonbody = {
+        "button":[
+            {
+                "type":"click",
+                "name":"今日歌曲123",
+                "key":"V1001_TODAY_MUSIC"
+            },
+            {
+                "name":"菜单",
+                "sub_button":[
+                    {
+                        "type":"view",
+                        "name":"搜索",
+                        "url":"http://zhf1989.free.idcfengye.com/"
+                    },
+                    {
+                        "type":"click",
+                        "name":"赞一下我们",
+                        "key":"V1001_GOOD"
+                    }]
+            }]
+    };
+
+    var opts = {
+        url: 'https://api.weixin.qq.com/cgi-bin/menu/create?access_token=' + data.accessToken,
+        method: "POST",
+        json: jsonbody,
+        header: {
+            "content-type": "application/json",
+        }
+    }
+    post(opts).then(function (res) {
+        // code = JSON.parse(res);
+        console.log(res);
+    }).catch(function (err) {
+        console.log(err);
+    })
+}
 
 
 /**

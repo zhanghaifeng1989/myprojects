@@ -2,16 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c8a20aa-c5b3-4b31-a3a4-ea9a66b7d846" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../WeChat-Bot/routes/check.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WeChat-Bot/routes/wexin.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../WeChat-Bot/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../WeChat-Bot/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WeChat-Bot/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../WeChat-Bot/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WeChat-Bot/bin/www" beforeDir="false" afterPath="$PROJECT_DIR$/../WeChat-Bot/bin/www" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xml2js/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xml2js/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xml2js/lib/bom.js" beforeDir="false" afterPath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xml2js/lib/bom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xml2js/lib/processors.js" beforeDir="false" afterPath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xml2js/lib/processors.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xml2js/lib/xml2js.js" beforeDir="false" afterPath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xml2js/lib/xml2js.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xml2js/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xml2js/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xmlbuilder/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xmlbuilder/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xmlbuilder/lib/XMLAttribute.js" beforeDir="false" afterPath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xmlbuilder/lib/XMLAttribute.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xmlbuilder/lib/XMLBuilder.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xmlbuilder/lib/XMLCData.js" beforeDir="false" afterPath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xmlbuilder/lib/XMLCData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xmlbuilder/lib/XMLComment.js" beforeDir="false" afterPath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xmlbuilder/lib/XMLComment.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xmlbuilder/lib/XMLDTDAttList.js" beforeDir="false" afterPath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xmlbuilder/lib/XMLDTDAttList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xmlbuilder/lib/XMLDTDElement.js" beforeDir="false" afterPath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xmlbuilder/lib/XMLDTDElement.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xmlbuilder/lib/XMLDTDEntity.js" beforeDir="false" afterPath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xmlbuilder/lib/XMLDTDEntity.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xmlbuilder/lib/XMLDTDNotation.js" beforeDir="false" afterPath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xmlbuilder/lib/XMLDTDNotation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xmlbuilder/lib/XMLDeclaration.js" beforeDir="false" afterPath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xmlbuilder/lib/XMLDeclaration.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xmlbuilder/lib/XMLDocType.js" beforeDir="false" afterPath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xmlbuilder/lib/XMLDocType.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xmlbuilder/lib/XMLElement.js" beforeDir="false" afterPath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xmlbuilder/lib/XMLElement.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xmlbuilder/lib/XMLNode.js" beforeDir="false" afterPath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xmlbuilder/lib/XMLNode.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xmlbuilder/lib/XMLProcessingInstruction.js" beforeDir="false" afterPath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xmlbuilder/lib/XMLProcessingInstruction.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xmlbuilder/lib/XMLRaw.js" beforeDir="false" afterPath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xmlbuilder/lib/XMLRaw.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xmlbuilder/lib/XMLStringifier.js" beforeDir="false" afterPath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xmlbuilder/lib/XMLStringifier.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xmlbuilder/lib/XMLText.js" beforeDir="false" afterPath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xmlbuilder/lib/XMLText.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xmlbuilder/lib/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xmlbuilder/lib/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xmlbuilder/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xmlbuilder/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../WeChat-Bot/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../WeChat-Bot/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../WeChat-Bot/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../WeChat-Bot/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WeChat-Bot/routes/check.js" beforeDir="false" afterPath="$PROJECT_DIR$/../WeChat-Bot/routes/check.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../WeChat-Bot/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../WeChat-Bot/routes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WeChat-Bot/routes/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/../WeChat-Bot/routes/users.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WeChat-Bot/wechat.js" beforeDir="false" afterPath="$PROJECT_DIR$/../WeChat-Bot/routes/wechat.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WeChat-Bot/routes/wechat.js" beforeDir="false" afterPath="$PROJECT_DIR$/../WeChat-Bot/routes/wechatutils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WeChat-Bot/routes/wexin.js" beforeDir="false" afterPath="$PROJECT_DIR$/../WeChat-Bot/routes/wexin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -29,11 +51,12 @@
     <session id="1189781082">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
-          <entry key="project.open.time.1" value="1" />
+          <entry key="project.closed" value="4" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.33" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -90,8 +113,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app2.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="53" lean-forward="true" selection-start-column="2" selection-end-column="53" />
+            <state relative-caret-position="405">
+              <caret line="15" column="48" lean-forward="true" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -99,8 +122,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/product.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1188">
-              <caret line="44" column="8" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="8" />
+            <state relative-caret-position="926">
+              <caret line="35" selection-start-line="35" selection-end-line="40" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -108,7 +131,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/cars.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
+            <state relative-caret-position="351">
               <caret line="15" column="10" lean-forward="true" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
               <folding>
                 <element signature="e#0#48#0" />
@@ -120,7 +143,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/product.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1971">
+            <state relative-caret-position="818">
               <caret line="73" selection-start-line="73" selection-end-line="73" />
             </state>
           </provider>
@@ -180,7 +203,7 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="31" />
     <option name="y" value="26" />
     <option name="width" value="1440" />
@@ -294,11 +317,13 @@
       <workItem from="1541764604439" duration="2100000" />
       <workItem from="1541767924558" duration="6917000" />
       <workItem from="1542790170545" duration="13000" />
+      <workItem from="1542871937565" duration="407000" />
+      <workItem from="1542955505538" duration="1725000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19580000" />
+    <option name="totallyTimeSpent" value="21712000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -310,14 +335,13 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="31" y="26" width="1440" height="827" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24108416" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1780822" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.12653062" />
@@ -328,6 +352,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32840723" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32789117" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -431,30 +456,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/product.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1188">
-          <caret line="44" column="8" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/product.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1971">
-          <caret line="73" selection-start-line="73" selection-end-line="73" />
+        <state relative-caret-position="926">
+          <caret line="35" selection-start-line="35" selection-end-line="40" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/cars.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
+        <state relative-caret-position="351">
           <caret line="15" column="10" lean-forward="true" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
           <folding>
             <element signature="e#0#48#0" />
@@ -462,10 +473,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/views/product.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="818">
+          <caret line="73" selection-start-line="73" selection-end-line="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app2.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="53" lean-forward="true" selection-start-column="2" selection-end-column="53" />
+        <state relative-caret-position="405">
+          <caret line="15" column="48" lean-forward="true" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
         </state>
       </provider>
     </entry>

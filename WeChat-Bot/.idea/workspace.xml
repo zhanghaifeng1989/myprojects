@@ -3,36 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8023e70e-35a6-4294-a5da-a133640448d2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/xml2js/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/xml2js/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/xml2js/lib/bom.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/xml2js/lib/bom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/xml2js/lib/processors.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/xml2js/lib/processors.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/xml2js/lib/xml2js.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/xml2js/lib/xml2js.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/xml2js/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/xml2js/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/xmlbuilder/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/xmlbuilder/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/xmlbuilder/lib/XMLAttribute.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/xmlbuilder/lib/XMLAttribute.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/xmlbuilder/lib/XMLBuilder.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/xmlbuilder/lib/XMLCData.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/xmlbuilder/lib/XMLCData.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/xmlbuilder/lib/XMLComment.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/xmlbuilder/lib/XMLComment.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/xmlbuilder/lib/XMLDTDAttList.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/xmlbuilder/lib/XMLDTDAttList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/xmlbuilder/lib/XMLDTDElement.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/xmlbuilder/lib/XMLDTDElement.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/xmlbuilder/lib/XMLDTDEntity.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/xmlbuilder/lib/XMLDTDEntity.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/xmlbuilder/lib/XMLDTDNotation.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/xmlbuilder/lib/XMLDTDNotation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/xmlbuilder/lib/XMLDeclaration.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/xmlbuilder/lib/XMLDeclaration.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/xmlbuilder/lib/XMLDocType.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/xmlbuilder/lib/XMLDocType.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/xmlbuilder/lib/XMLElement.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/xmlbuilder/lib/XMLElement.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/xmlbuilder/lib/XMLNode.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/xmlbuilder/lib/XMLNode.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/xmlbuilder/lib/XMLProcessingInstruction.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/xmlbuilder/lib/XMLProcessingInstruction.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/xmlbuilder/lib/XMLRaw.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/xmlbuilder/lib/XMLRaw.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/xmlbuilder/lib/XMLStringifier.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/xmlbuilder/lib/XMLStringifier.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/xmlbuilder/lib/XMLText.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/xmlbuilder/lib/XMLText.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/xmlbuilder/lib/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/xmlbuilder/lib/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/xmlbuilder/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/xmlbuilder/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/check.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/check.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/wechat.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/wechatutils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/wexin.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/wexin.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../untitled/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -48,10 +18,11 @@
     <session id="-384732019">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.27" value="2" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -87,8 +58,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/wechatutils.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-173">
-              <caret line="148" column="45" lean-forward="true" selection-start-line="148" selection-start-column="45" selection-end-line="148" selection-end-column="45" />
+            <state relative-caret-position="3996">
+              <caret line="148" column="45" selection-start-line="148" selection-start-column="45" selection-end-line="148" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -115,7 +86,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/wexin.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
+            <state relative-caret-position="540">
               <caret line="20" column="52" lean-forward="true" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="52" />
             </state>
           </provider>
@@ -127,19 +98,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/package-lock.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="49" column="17" lean-forward="true" selection-start-line="49" selection-start-column="17" selection-end-line="49" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/users.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+            <state relative-caret-position="270">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
@@ -147,7 +109,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
+            <state relative-caret-position="216">
               <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
             </state>
           </provider>
@@ -156,7 +118,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/check.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="353">
+            <state relative-caret-position="2106">
               <caret line="78" column="55" lean-forward="true" selection-start-line="78" selection-start-column="55" selection-end-line="78" selection-end-column="55" />
             </state>
           </provider>
@@ -210,7 +172,7 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="31" />
     <option name="y" value="26" />
     <option name="width" value="1440" />
@@ -253,7 +215,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../untitled" />
+    <property name="last_opened_file_path" value="D:/iosDemo" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -302,24 +264,25 @@
       <option name="presentableId" value="Default" />
       <updated>1542704112004</updated>
       <workItem from="1542704113614" duration="29760000" />
-      <workItem from="1542866275076" duration="29346000" />
+      <workItem from="1542866275076" duration="29515000" />
+      <workItem from="1542964066964" duration="2213000" />
+      <workItem from="1543197960732" duration="38000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59106000" />
+    <option name="totallyTimeSpent" value="61526000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18440464" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.44468546" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.44468546" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -395,31 +358,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
+    <entry file="file://$PROJECT_DIR$/package-lock.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+        <state relative-caret-position="378">
+          <caret line="47" column="7" lean-forward="true" selection-start-line="47" selection-start-column="7" selection-end-line="47" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/users.js">
+    <entry file="file://$PROJECT_DIR$/routes/wechatutils.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/layout.jade">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/check.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="78" column="55" lean-forward="true" selection-start-line="78" selection-start-column="55" selection-end-line="78" selection-end-column="55" />
+        <state relative-caret-position="3996">
+          <caret line="148" column="45" selection-start-line="148" selection-start-column="45" selection-end-line="148" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/index.jade">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/layout.jade">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/index.js">
@@ -429,16 +385,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/wechatutils.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-173">
-          <caret line="148" column="45" lean-forward="true" selection-start-line="148" selection-start-column="45" selection-end-line="148" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/wexin.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
+        <state relative-caret-position="540">
           <caret line="20" column="52" lean-forward="true" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="52" />
         </state>
       </provider>
@@ -446,10 +395,24 @@
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/package-lock.json">
+    <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="49" column="17" lean-forward="true" selection-start-line="49" selection-start-column="17" selection-end-line="49" selection-end-column="17" />
+        <state relative-caret-position="216">
+          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/check.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2106">
+          <caret line="78" column="55" lean-forward="true" selection-start-line="78" selection-start-column="55" selection-end-line="78" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/users.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>

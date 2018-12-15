@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         thread1.start();
         thread2.start();
 
-        new Okhttputils().kaolalogin();
+        new Okhttputils().postTest();
 
 
 //        File file  = new File(Environment.getExternalStorageDirectory()+"/demo");

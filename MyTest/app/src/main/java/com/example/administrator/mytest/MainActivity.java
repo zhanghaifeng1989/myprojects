@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import net.lingala.zip4j.unzip.Unzip;
 
@@ -32,6 +33,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+//        FixDexUtils.loadFixedDex(this, Environment.getExternalStorageDirectory());
+
+
+
         Thread thread1 = new Thread(new Runnable() {
             @Override
             public void run() {
@@ -50,6 +56,7 @@ public class MainActivity extends AppCompatActivity {
         thread2.start();
 
         new Okhttputils().postTest();
+        Toast.makeText(MainActivity.this,"origin",Toast.LENGTH_LONG).show();
 
 
 //        File file  = new File(Environment.getExternalStorageDirectory()+"/demo");

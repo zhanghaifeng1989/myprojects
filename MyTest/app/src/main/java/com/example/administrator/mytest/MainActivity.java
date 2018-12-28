@@ -54,8 +54,9 @@ public class MainActivity extends AppCompatActivity {
         });
         thread1.start();
         thread2.start();
+
+        new Okhttputils().postTest();
         Toast.makeText(MainActivity.this,"origin",Toast.LENGTH_LONG).show();
-//        new Okhttputils().kaolalogin();
 
 
 //        File file  = new File(Environment.getExternalStorageDirectory()+"/demo");

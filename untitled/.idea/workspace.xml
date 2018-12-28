@@ -2,43 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c8a20aa-c5b3-4b31-a3a4-ea9a66b7d846" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../WeChat-Bot/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../WeChat-Bot/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xml2js/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xml2js/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xml2js/lib/bom.js" beforeDir="false" afterPath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xml2js/lib/bom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xml2js/lib/processors.js" beforeDir="false" afterPath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xml2js/lib/processors.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xml2js/lib/xml2js.js" beforeDir="false" afterPath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xml2js/lib/xml2js.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xml2js/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xml2js/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xmlbuilder/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xmlbuilder/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xmlbuilder/lib/XMLAttribute.js" beforeDir="false" afterPath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xmlbuilder/lib/XMLAttribute.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xmlbuilder/lib/XMLBuilder.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xmlbuilder/lib/XMLCData.js" beforeDir="false" afterPath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xmlbuilder/lib/XMLCData.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xmlbuilder/lib/XMLComment.js" beforeDir="false" afterPath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xmlbuilder/lib/XMLComment.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xmlbuilder/lib/XMLDTDAttList.js" beforeDir="false" afterPath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xmlbuilder/lib/XMLDTDAttList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xmlbuilder/lib/XMLDTDElement.js" beforeDir="false" afterPath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xmlbuilder/lib/XMLDTDElement.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xmlbuilder/lib/XMLDTDEntity.js" beforeDir="false" afterPath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xmlbuilder/lib/XMLDTDEntity.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xmlbuilder/lib/XMLDTDNotation.js" beforeDir="false" afterPath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xmlbuilder/lib/XMLDTDNotation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xmlbuilder/lib/XMLDeclaration.js" beforeDir="false" afterPath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xmlbuilder/lib/XMLDeclaration.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xmlbuilder/lib/XMLDocType.js" beforeDir="false" afterPath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xmlbuilder/lib/XMLDocType.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xmlbuilder/lib/XMLElement.js" beforeDir="false" afterPath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xmlbuilder/lib/XMLElement.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xmlbuilder/lib/XMLNode.js" beforeDir="false" afterPath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xmlbuilder/lib/XMLNode.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xmlbuilder/lib/XMLProcessingInstruction.js" beforeDir="false" afterPath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xmlbuilder/lib/XMLProcessingInstruction.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xmlbuilder/lib/XMLRaw.js" beforeDir="false" afterPath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xmlbuilder/lib/XMLRaw.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xmlbuilder/lib/XMLStringifier.js" beforeDir="false" afterPath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xmlbuilder/lib/XMLStringifier.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xmlbuilder/lib/XMLText.js" beforeDir="false" afterPath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xmlbuilder/lib/XMLText.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xmlbuilder/lib/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xmlbuilder/lib/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xmlbuilder/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../WeChat-Bot/node_modules/xmlbuilder/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WeChat-Bot/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../WeChat-Bot/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WeChat-Bot/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../WeChat-Bot/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WeChat-Bot/routes/check.js" beforeDir="false" afterPath="$PROJECT_DIR$/../WeChat-Bot/routes/check.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WeChat-Bot/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../WeChat-Bot/routes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WeChat-Bot/routes/wechat.js" beforeDir="false" afterPath="$PROJECT_DIR$/../WeChat-Bot/routes/wechatutils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WeChat-Bot/routes/wexin.js" beforeDir="false" afterPath="$PROJECT_DIR$/../WeChat-Bot/routes/wexin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -95,8 +65,14 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bin/www">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="30">
+              <caret line="2" column="3" lean-forward="false" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+              <folding />
+=======
             <state relative-caret-position="54">
               <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+>>>>>>> a73767b5adde229602b2ecbf1eb973da0c6d6513
             </state>
           </provider>
         </entry>
@@ -104,13 +80,23 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/index.js">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="135">
+              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding />
+=======
             <state relative-caret-position="243">
               <caret line="9" selection-start-line="9" selection-end-line="9" />
+>>>>>>> a73767b5adde229602b2ecbf1eb973da0c6d6513
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
+      <file leaf-file-name="app2.js" pinned="false" current-in-tab="true">
+=======
       <file pinned="false" current-in-tab="true">
+>>>>>>> a73767b5adde229602b2ecbf1eb973da0c6d6513
         <entry file="file://$PROJECT_DIR$/app2.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="405">
@@ -119,15 +105,44 @@
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
+      <file leaf-file-name="lodashDemo.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lodashDemo.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="575">
+              <caret line="41" column="17" lean-forward="false" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
+              <folding>
+                <element signature="e#0#48#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="helloword.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/helloword.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="17" column="3" lean-forward="true" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
+              <folding />
+=======
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/product.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="926">
               <caret line="35" selection-start-line="35" selection-end-line="40" selection-end-column="3" />
+>>>>>>> a73767b5adde229602b2ecbf1eb973da0c6d6513
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
+      <file leaf-file-name="hello.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/hello.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="7" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="7" />
+              <folding />
+=======
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/cars.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -136,6 +151,7 @@
               <folding>
                 <element signature="e#0#48#0" />
               </folding>
+>>>>>>> a73767b5adde229602b2ecbf1eb973da0c6d6513
             </state>
           </provider>
         </entry>
@@ -143,8 +159,14 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/product.ejs">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="1095">
+              <caret line="73" column="0" lean-forward="true" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+              <folding />
+=======
             <state relative-caret-position="818">
               <caret line="73" selection-start-line="73" selection-end-line="73" />
+>>>>>>> a73767b5adde229602b2ecbf1eb973da0c6d6513
             </state>
           </provider>
         </entry>
@@ -203,11 +225,17 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
+<<<<<<< HEAD
+  <component name="ProjectFrameBounds">
+    <option name="x" value="353" />
+    <option name="y" value="201" />
+=======
   <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="31" />
     <option name="y" value="26" />
+>>>>>>> a73767b5adde229602b2ecbf1eb973da0c6d6513
     <option name="width" value="1440" />
-    <option name="height" value="827" />
+    <option name="height" value="816" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -217,6 +245,49 @@
     <panes>
       <pane id="ProjectPane">
         <subPane>
+<<<<<<< HEAD
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="routes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+=======
           <expand>
             <path>
               <item name="untitled" type="b2602c69:ProjectViewProjectNode" />
@@ -231,6 +302,7 @@
           <select />
         </subPane>
       </pane>
+>>>>>>> a73767b5adde229602b2ecbf1eb973da0c6d6513
       <pane id="Scope" />
     </panes>
   </component>
@@ -316,14 +388,22 @@
       <workItem from="1541747150293" duration="7942000" />
       <workItem from="1541764604439" duration="2100000" />
       <workItem from="1541767924558" duration="6917000" />
+<<<<<<< HEAD
+      <workItem from="1542023791336" duration="850000" />
+=======
       <workItem from="1542790170545" duration="13000" />
       <workItem from="1542871937565" duration="407000" />
       <workItem from="1542955505538" duration="2323000" />
+>>>>>>> a73767b5adde229602b2ecbf1eb973da0c6d6513
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
+    <option name="totallyTimeSpent" value="20417000" />
+=======
     <option name="totallyTimeSpent" value="22310000" />
+>>>>>>> a73767b5adde229602b2ecbf1eb973da0c6d6513
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -335,6 +415,28 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
+<<<<<<< HEAD
+    <frame x="353" y="201" width="1440" height="816" extended-state="0" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2410148" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32840723" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32840723" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12569061" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32789117" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+=======
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
@@ -356,6 +458,7 @@
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+>>>>>>> a73767b5adde229602b2ecbf1eb973da0c6d6513
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -365,6 +468,107 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/bin/www">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="3" lean-forward="false" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="22" lean-forward="false" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/product.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="8" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/cars.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#48#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/product.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1095">
+          <caret line="73" column="0" lean-forward="true" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/www">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/www">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="36" lean-forward="false" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+=======
+>>>>>>> a73767b5adde229602b2ecbf1eb973da0c6d6513
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/javascript/nodejs/library/node-globals-stub.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -386,6 +590,8 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+=======
     <entry file="file://$PROJECT_DIR$/js/hello.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="81">
@@ -400,6 +606,7 @@
         </state>
       </provider>
     </entry>
+>>>>>>> a73767b5adde229602b2ecbf1eb973da0c6d6513
     <entry file="file://$PROJECT_DIR$/node_modules/express/lib/view.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="73">
@@ -431,12 +638,46 @@
     <entry file="file://$PROJECT_DIR$/hello-word-server.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
+<<<<<<< HEAD
+          <caret line="13" column="23" lean-forward="false" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="23" />
+=======
           <caret line="13" column="23" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="23" />
+>>>>>>> a73767b5adde229602b2ecbf1eb973da0c6d6513
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lodashDemo.js">
+    <entry file="file://$PROJECT_DIR$/routes/users.js">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="195">
+          <caret line="13" column="2" lean-forward="false" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/product.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1095">
+          <caret line="73" column="0" lean-forward="true" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/cars.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="7" column="12" lean-forward="true" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#48#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/product.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="8" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+          <folding />
+=======
         <state relative-caret-position="585">
           <caret line="41" column="17" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
         </state>
@@ -446,11 +687,51 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="13" column="2" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
+>>>>>>> a73767b5adde229602b2ecbf1eb973da0c6d6513
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="135">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lodashDemo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="41" column="17" lean-forward="false" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#48#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/helloword.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="17" column="3" lean-forward="true" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/hello.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="7" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bin/www">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="3" lean-forward="false" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+          <folding />
+=======
         <state relative-caret-position="54">
           <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
         </state>
@@ -484,13 +765,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
           <caret line="9" selection-start-line="9" selection-end-line="9" />
+>>>>>>> a73767b5adde229602b2ecbf1eb973da0c6d6513
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app2.js">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="435">
+          <caret line="29" column="22" lean-forward="false" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+          <folding />
+=======
         <state relative-caret-position="405">
           <caret line="15" column="48" lean-forward="true" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
+>>>>>>> a73767b5adde229602b2ecbf1eb973da0c6d6513
         </state>
       </provider>
     </entry>

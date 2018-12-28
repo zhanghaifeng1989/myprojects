@@ -221,4 +221,64 @@ public class Okhttputils {
         });
     }
 
+
+
+    public void getTest(){
+        OkHttpClient client = new OkHttpClient();
+        //构造Request对象
+        //采用建造者模式，链式调用指明进行Get请求,传入Get的请求地址
+        Request request = new Request.Builder().get().url("http://47.105.169.181:3001/cars").build();
+        Call call = client.newCall(request);
+        //异步调用并设置回调函数
+        call.enqueue(new Callback() {
+            @Override
+            public void onFailure(Call call, IOException e) {
+            }
+
+            @Override
+            public void onResponse(Call call, final Response response) throws IOException {
+                final String responseStr = response.body().string();
+            }
+        });
+    }
+
+    public void postTest(){
+
+        //"device":"","lon":"","lat":"","time":"","address":""}
+
+        String poststr = "{'device':'android','lon':'30.0','lat':'120.9','time':111111111,'address':'黑色'}";
+        try {
+            JSONObject jsonObject = new JSONObject(poststr);
+            poststr = jsonObject.toString();
+        }catch (Exception ep){
+
+        }
+
+
+        OkHttpClient client = new OkHttpClient();
+        RequestBody requestBody = FormBody.create(MediaType.parse("application/json; charset=utf-8")
+                , poststr);
+        Request request = new Request.Builder()
+                .url("http://47.105.169.181:3001/locserv/add")//请求的url
+                .post(requestBody)
+                .build();
+        Call call = client.newCall(request);
+        //异步调用并设置回调函数
+        call.enqueue(new Callback() {
+            @Override
+            public void onFailure(Call call, IOException e) {
+                e.getMessage();
+            }
+
+            @Override
+            public void onResponse(Call call, final Response response) throws IOException {
+                final String responseStr = response.body().string();
+            }
+        });
+    }
+
+
+
+
+
 }

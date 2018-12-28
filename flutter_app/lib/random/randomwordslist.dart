@@ -35,6 +35,7 @@ class RandomWordsState extends State<RandomWords> {
 
 
     return new ListView.builder(
+        itemCount: _suggestions.length,
         padding: const EdgeInsets.all(16.0),
         // 对于每个建议的单词对都会调用一次itemBuilder，然后将单词对添加到ListTile行中
         // 在偶数行，该函数会为单词对添加一个ListTile row.
@@ -42,19 +43,18 @@ class RandomWordsState extends State<RandomWords> {
         // 注意，在小屏幕上，分割线看起来可能比较吃力。
         itemBuilder: (context, i) {
           // 在每一列之前，添加一个1像素高的分隔线widget
-          if (i.isOdd) return new Divider();
+//          if (i.isOdd) return new Divider();
 
 //          // 语法 "i ~/ 2" 表示i除以2，但返回值是整形（向下取整），比如i为：1, 2, 3, 4, 5
 //          // 时，结果为0, 1, 1, 2, 2， 这可以计算出ListView中减去分隔线后的实际单词对数量
-          final index = i ~/ 2;
+//          final index = i ~/ 2;
 //          // 如果是建议列表中最后一个单词对
 //          if (index >= _suggestions.length) {
 //            // ...接着再生成10个单词对，然后添加到建议列表
 //            _suggestions.addAll(generateWordPairs().take(10));
 //          }
 //          return _buildRow(_suggestions[index]);
-
-            return new RandomWordsItem(mtodo:_suggestions[index] ,alreadySaved: _saved.contains(_suggestions[index]),onCartChanged: _handleCartChanged,);
+            return new RandomWordsItem(mtodo:_suggestions[i] ,alreadySaved: _saved.contains(_suggestions[i]),onCartChanged: _handleCartChanged,);
         }
     );
   }
@@ -85,13 +85,22 @@ class RandomWordsState extends State<RandomWords> {
   }
 
   void _pushSaved() {
-    Navigator.of(context).push(
-      new MaterialPageRoute(
-        builder: (context) {
-          return new RandomWordsSelect(saved: _saved);
-        },
-      ),
+    setState(() {
+
+      int i = widget.suggestions.length;
+   Todo todo =  new Todo(
+      'Todo $i',
+      'A description of what needs to be done for Todo $i',
     );
+    widget.suggestions.add(todo);
+    });
+//    Navigator.of(context).push(
+//      new MaterialPageRoute(
+//        builder: (context) {
+//          return new RandomWordsSelect(saved: _saved);
+//        },
+//      ),
+//    );
   }
 
   void _handleCartChanged(Todo todo, bool isselect) {

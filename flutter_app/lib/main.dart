@@ -8,7 +8,7 @@ import 'package:dio/dio.dart';
 
 
 
-/****************************************列表案例*****************************************/
+/****************************************列表案例*****************************************
 void main() => runApp(new MyApp());
 class MyApp extends StatelessWidget {
   @override
@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-/************************************列表案例*****************************************/
+***********************************列表案例*****************************************/
 
 
 
@@ -423,54 +423,126 @@ Column buildButtonColumn(IconData icon, String label) {
 ***************************************布局案例*****************************************/
 
 
-/***************************************viewpager案例****************************************
-
+/***************************************viewpager案例****************************************/
 class AppBarBottomSample extends StatefulWidget {
   @override
-  _AppBarBottomSampleState createState() => new _AppBarBottomSampleState();
+  _AppBarBottomSampleState createState() {
+    print("createState");
+    return new _AppBarBottomSampleState();}
 }
 
-class _AppBarBottomSampleState extends State<AppBarBottomSample> with SingleTickerProviderStateMixin {
-  TabController _tabController;
-
+class _AppBarBottomSampleState extends State<AppBarBottomSample> {
+   List<Choice> mychoices = new List<Choice>();
+  int length = 0;
   @override
   void initState() {
+    print("initState");
     super.initState();
-    _tabController = new TabController(vsync: this, length: choices.length);
+    mychoices.addAll(choices);
+    length = mychoices.length;
   }
+  @override
+  void didChangeDependencies() {
+    print("didChangeDependencies");
+    super.didChangeDependencies();
+  }
+   @override
+  void didUpdateWidget(AppBarBottomSample oldWidget) {
+     print("didUpdateWidget");
+     super.didUpdateWidget(oldWidget);
+  }
+
 
   @override
   void dispose() {
-    _tabController.dispose();
+    print("dispose");
     super.dispose();
   }
-
-  void _nextPage(int delta) {
-    final int newIndex = _tabController.index + delta;
-    if (newIndex < 0 || newIndex >= _tabController.length)
-      return;
-    _tabController.animateTo(newIndex);
-  }
-
   @override
   Widget build(BuildContext context) {
+    print("build");
     return new MaterialApp(
       home: new Scaffold(
+         backgroundColor: Colors.white54,
         appBar: new AppBar(
           backgroundColor:Colors.white54,
           title: new Text('AppBar Bottom Widget',style:new TextStyle(color: Colors.black26),),
           leading: new IconButton(
             tooltip: 'Previous choice',
             icon: const Icon(Icons.arrow_back),
-            onPressed: () { _nextPage(-1); },
+            onPressed: () {
+            },
           ),
           actions: <Widget>[
             new IconButton(
               icon: const Icon(Icons.arrow_forward),
               tooltip: 'Next choice',
-              onPressed: () { _nextPage(1); },
+              onPressed: () {
+              setState(() {
+                mychoices.add(new Choice(title: 'BICYCLE', icon: Icons.directions_bike));
+              });
+                },
             ),
+            new Text(
+                mychoices.length.toString(),
+                style:new TextStyle(color: Colors.black26),
+                ),
           ],
+        ),
+        body:  length ==mychoices.length? new TabViewPage(mychoice: mychoices):null,
+      ),
+    );
+  }
+}
+
+
+
+
+class TabViewPage extends StatefulWidget {
+  final List<Choice> mychoice;
+
+  const TabViewPage({ Key key, this.mychoice }) : super(key: key);
+  @override
+  TabViewPageState createState() {
+    print("createStateTabView");
+    return new TabViewPageState();}
+}
+
+class TabViewPageState extends State<TabViewPage> with SingleTickerProviderStateMixin {
+  TabController _tabController;
+  @override
+  void initState() {
+    print("initStateTabView");
+    super.initState();
+    _tabController = new TabController(vsync: this, length: widget.mychoice.length);
+  }
+  @override
+  void didChangeDependencies() {
+    print("didChangeDependenciesTabView");
+    super.didChangeDependencies();
+  }
+
+  @override
+  void didUpdateWidget(TabViewPage oldWidget) {
+    print("didUpdateWidgetTabView");
+    super.didUpdateWidget(oldWidget);
+  }
+
+
+  @override
+  void dispose() {
+    print("disposeTabView");
+    _tabController.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    print("buildTabView");
+    return new MaterialApp(
+      home: new Scaffold(
+        appBar: new AppBar(
+          backgroundColor:Colors.white54,
           bottom: new PreferredSize(
             preferredSize: const Size.fromHeight(48.0),
             child: new Theme(
@@ -485,7 +557,7 @@ class _AppBarBottomSampleState extends State<AppBarBottomSample> with SingleTick
         ),
         body: new TabBarView(
           controller: _tabController,
-          children: choices.map((Choice choice) {
+          children: widget.mychoice.map((Choice choice) {
             return new Padding(
               padding: const EdgeInsets.all(16.0),
               child: new ChoiceCard(choice: choice),
@@ -497,6 +569,10 @@ class _AppBarBottomSampleState extends State<AppBarBottomSample> with SingleTick
   }
 }
 
+
+
+
+
 class Choice {
   const Choice({ this.title, this.icon });
   final String title;
@@ -505,20 +581,54 @@ class Choice {
 
 const List<Choice> choices = const <Choice>[
   const Choice(title: 'CAR', icon: Icons.directions_car),
-  const Choice(title: 'BICYCLE', icon: Icons.directions_bike),
   const Choice(title: 'BOAT', icon: Icons.directions_boat),
   const Choice(title: 'BUS', icon: Icons.directions_bus),
   const Choice(title: 'TRAIN', icon: Icons.directions_railway),
   const Choice(title: 'WALK', icon: Icons.directions_walk),
 ];
 
-class ChoiceCard extends StatelessWidget {
-  const ChoiceCard({ Key key, this.choice }) : super(key: key);
-
+class ChoiceCard extends StatefulWidget {
   final Choice choice;
+
+  const ChoiceCard({ Key key, this.choice }) : super(key: key);
+   @override
+   ChoiceCardState createState() {
+     print("createState"+choice.title);
+
+     return new ChoiceCardState();
+  }
+}
+class ChoiceCardState extends State<ChoiceCard>{
+
+
+  @override
+  void initState() {
+    print("initState"+widget.choice.title);
+    super.initState();
+  }
+  @override
+  void didChangeDependencies() {
+    print("didChangeDependencies"+widget.choice.title);
+
+    super.didChangeDependencies();
+  }
+  @override
+  void didUpdateWidget(ChoiceCard oldWidget) {
+    print("didUpdateWidget"+widget.choice.title);
+
+    super.didUpdateWidget(oldWidget);
+  }
+  @override
+  void dispose() {
+    print("dispose"+widget.choice.title);
+    super.dispose();
+  }
+
 
   @override
   Widget build(BuildContext context) {
+    print("build"+widget.choice.title);
+
     final TextStyle textStyle = Theme.of(context).textTheme.display1;
     return new Card(
       color: Colors.white,
@@ -527,19 +637,18 @@ class ChoiceCard extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
-            new Icon(choice.icon, size: 128.0, color: textStyle.color),
-            new Text(choice.title, style: textStyle),
+            new Icon(widget.choice.icon, size: 128.0, color: textStyle.color),
+            new Text(widget.choice.title, style: textStyle),
           ],
         ),
       ),
     );
   }
 }
-
 void main() {
   runApp(new AppBarBottomSample());
 }
-*************************************viewpager案例*****************************************/
+/*************************************viewpager案例*****************************************/
 
 /***************************************diohttp案例****************************************
 import 'package:flutter_app/random/City.dart';

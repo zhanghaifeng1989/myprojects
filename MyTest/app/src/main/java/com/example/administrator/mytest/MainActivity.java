@@ -1,5 +1,6 @@
 package com.example.administrator.mytest;
 
+import android.app.Activity;
 import android.os.Environment;
 import android.os.Handler;
 import android.os.Message;
@@ -27,7 +28,8 @@ import okhttp3.RequestBody;
 import okhttp3.Response;
 import okhttp3.ResponseBody;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends Activity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

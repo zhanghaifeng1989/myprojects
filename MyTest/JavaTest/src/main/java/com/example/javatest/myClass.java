@@ -9,7 +9,17 @@ public class myClass {
          CurrentConditionsDisplay currentDisplay = new CurrentConditionsDisplay(weatherData);
          weatherData.setMeasurements(1,2,3);
     }
+
+
+
 }
+
+
+
+
+
+
+
 
 interface  Subject{
     void registerObserver(MObserver o);

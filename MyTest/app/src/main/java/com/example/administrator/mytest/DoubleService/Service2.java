@@ -1,9 +1,16 @@
 package com.example.administrator.mytest.DoubleService;
 
 import android.app.AlarmManager;
+import android.app.Notification;
+import android.app.NotificationChannel;
+import android.app.NotificationChannelGroup;
+import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.app.Service;
+import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
+import android.os.Build;
 import android.os.Handler;
 import android.os.IBinder;
 import android.os.Message;
@@ -13,6 +20,7 @@ import android.util.Log;
 import android.widget.Toast;
 
 import com.example.administrator.mytest.LogcatHelper;
+import com.example.administrator.mytest.R;
 
 /**
  * Created by Administrator on 2019/1/21.
@@ -49,10 +57,13 @@ public class Service2 extends Service {
 
         @Override
         public void startService() throws RemoteException {
-            Log.d(LogcatHelper.TAG, "service2--startService1");
-
             Intent i = new Intent(getBaseContext(), Service1.class);
-            getBaseContext().startService(i);
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                getBaseContext().startForegroundService(i);
+            } else {
+                getBaseContext().startService(i);
+            }
+
 
         }
     };
@@ -62,15 +73,12 @@ public class Service2 extends Service {
      */
     @Override
     public void onTrimMemory(int level) {
-        Log.d(LogcatHelper.TAG, "service2--onTrimMemory");
 
         startService1();
     }
 
     @Override
     public void onCreate() {
-//        LogcatHelper.getInstance(this).start();
-        Log.d(LogcatHelper.TAG, "service2--onCreate");
 
         Toast.makeText(Service2.this, "Service2 启动中...", Toast.LENGTH_SHORT)
                 .show();
@@ -115,12 +123,28 @@ public class Service2 extends Service {
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            NotificationManager notificationManager = (NotificationManager) Service2.this.getSystemService(Context.NOTIFICATION_SERVICE);
+            notificationManager.createNotificationChannelGroup(new NotificationChannelGroup("a", "a"));
+
+            NotificationChannel channel = new NotificationChannel("1",
+                    "Channel1", NotificationManager.IMPORTANCE_DEFAULT);
+            channel.enableLights(true);
+            channel.setLightColor(Color.GREEN);
+            channel.setShowBadge(true);
+            notificationManager.createNotificationChannel(channel);
+            int notificationId = 0x1234;
+            Notification.Builder builder = new Notification.Builder(Service2.this, "1");
+
+            builder.setSmallIcon(R.drawable.ic_launcher_foreground)
+                    .setContentText("后台备份正在运行");
+            startForeground(notificationId, builder.build());
+        }
         return START_STICKY;
     }
 
     @Override
     public void onDestroy() {
-        Log.d(LogcatHelper.TAG, "service2--onDestroy");
 
         super.onDestroy();
     }

@@ -13,9 +13,15 @@ public class AlarmReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
         Intent i1 = new Intent(context, Service1.class);
-        context.startService(i1);
 
         Intent i2 = new Intent(context, Service2.class);
-        context.startService(i2);
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            context.startForegroundService(i1);
+            context.startForegroundService(i2);
+        } else {
+            context.startService(i1);
+            context.startService(i2);
+        }
     }
 }

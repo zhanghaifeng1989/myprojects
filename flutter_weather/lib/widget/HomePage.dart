@@ -2,20 +2,19 @@ import 'package:flutter/material.dart';
 import 'package:flutter_weather/widget/HomePageItem.dart';
 import 'package:flutter_weather/widget/CitySelectPage.dart';
 class HomePage extends StatefulWidget{
-@override
+  final List<String> mCitys;
+  HomePage({Key key, this.mCitys}) : super(key: key);
+  @override
   State<StatefulWidget> createState() {
     return new HomePageState();
   }
 }
 class HomePageState extends State<HomePage>with SingleTickerProviderStateMixin{
   TabController _tabController;
-  List<String> citys = const <String>[
-   '苏州','上海'
-  ];
   @override
   void initState() {
     super.initState();
-    _tabController = new TabController(vsync: this, length: citys.length);
+    _tabController = new TabController(vsync: this, length: widget.mCitys.length);
   }
 
   @override
@@ -35,53 +34,80 @@ class HomePageState extends State<HomePage>with SingleTickerProviderStateMixin{
   Widget build(BuildContext context) {
     return new MaterialApp(
       home: new Scaffold(
+        backgroundColor: Colors.white,
         appBar: new AppBar(
-          backgroundColor:Colors.white54,
-          title: new Text('AppBar Bottom Widget',style:new TextStyle(color: Colors.black26),),
+          title: new Text('天气预报',style:new TextStyle(color: Colors.white),),
           leading: new IconButton(
-            tooltip: 'Previous choice',
-            icon: const Icon(Icons.arrow_back),
+            tooltip: 'SelectCity',
+            icon: const Icon(Icons.add),
             onPressed: () {
+//              setState(() {
+//                citys.add("广州");
+//              });
+
               Navigator.of(context).push(
               new MaterialPageRoute(
                 builder: (context) {
-                  return new CitySelect();
+                  return new CitySelect(selectCitys: widget.mCitys,);
                 },
               ),
-            );},
+            );
+              },
           ),
-          actions: <Widget>[
-            new IconButton(
-              icon: const Icon(Icons.arrow_forward),
-              tooltip: 'Next choice',
-              onPressed: () { _nextPage(1); },
-            ),
-          ],
-          bottom: new PreferredSize(
-            preferredSize: const Size.fromHeight(48.0),
-            child: new Theme(
-              data: Theme.of(context).copyWith(accentColor: Colors.white),
-              child: new Container(
-                height: 48.0,
-                alignment: Alignment.center,
-                child: new TabPageSelector(controller: _tabController),
+
+          bottom: widget.mCitys.length==1?null:new PreferredSize(
+              preferredSize: const Size.fromHeight(2>1?28.0:0),
+              child: new Theme(
+                data: Theme.of(context).copyWith(accentColor: Colors.white),
+                child: new Container(
+                  height: 48.0,
+                  alignment: Alignment.center,
+                  child: new TabPageSelector(controller: _tabController),
+                ),
               ),
             ),
-          ),
+
+
+
+
         ),
+//         body: new Center(
+//           child: new Column(
+//             mainAxisSize: MainAxisSize.min,
+//             crossAxisAlignment: CrossAxisAlignment.center,
+//               children: citys.map((String city) {
+//
+//            return      new MaterialButton(
+//              onPressed: (){
+//
+//              },
+//              child: new Text(city),
+//              color: Colors.blue,
+//              height: 10,
+//            );
+//
+//          }).toList(),
+//           ),
+//
+//         ),
         body: new TabBarView(
           controller: _tabController,
-          children: citys.map((String city) {
-            return new Padding(
-              padding: const EdgeInsets.all(16.0),
-              child: new CityCard(cityname: city),
-            );
+          children: widget.mCitys.map((String city) {
+//            return new Padding(
+//              padding: const EdgeInsets.all(0.0),
+//              child: new CityCard(cityname: city),
+//            );
+            return new CityCard(cityname: city);
+
           }).toList(),
         ),
       ),
     );
   }
 }
+const List<String> cityss = const <String>[
+  "上海","北京"
+];
 
 
 

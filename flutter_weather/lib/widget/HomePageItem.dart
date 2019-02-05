@@ -10,18 +10,31 @@ class CityCard extends StatefulWidget {
     return  new CityCardState();
   }
 }
-class CityCardState extends State<CityCard>{
+class CityCardState extends State<CityCard> with AutomaticKeepAliveClientMixin{
   var result = '';
   bool hideprogress = true;
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    print("initState"+widget.cityname);
+
+  }
+
+ @override
+  // TODO: implement wantKeepAlive
+  bool get wantKeepAlive => true;
   @override
   Widget build(BuildContext context) {
     if(result.isEmpty) {
       getWeather();
     }
+    print(widget.cityname);
     final TextStyle textStyle = Theme.of(context).textTheme.display1;
-    return new Card(
-      color: Colors.white,
-      child: new Center(
+    return new Scaffold(
+      backgroundColor: Colors.black,
+      body: new Center(
         child: new Column(
           mainAxisSize: MainAxisSize.min,
           crossAxisAlignment: CrossAxisAlignment.center,
@@ -35,6 +48,14 @@ class CityCardState extends State<CityCard>{
               onPressed: getWeather,
               child: new Text('Get'),
             ),
+            new MaterialButton(
+              onPressed: (){
+
+              },
+              child: new Text(widget.cityname),
+              color: Colors.blue,
+              height: 10,
+            )
           ],
         ),
       ),

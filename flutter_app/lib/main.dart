@@ -8,7 +8,7 @@ import 'package:dio/dio.dart';
 
 
 
-/****************************************列表案例*****************************************/
+/****************************************列表案例****************************************/
 void main() => runApp(new MyApp());
 class MyApp extends StatelessWidget {
   @override
@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-/************************************列表案例*****************************************/
+/***********************************列表案例*****************************************/
 
 
 
@@ -423,7 +423,7 @@ Column buildButtonColumn(IconData icon, String label) {
 ***************************************布局案例*****************************************/
 
 
-/***************************************viewpager案例****************************************
+/***************************************viewpager案例***************************************
 
 class AppBarBottomSample extends StatefulWidget {
   @override
@@ -432,11 +432,13 @@ class AppBarBottomSample extends StatefulWidget {
 
 class _AppBarBottomSampleState extends State<AppBarBottomSample> with SingleTickerProviderStateMixin {
   TabController _tabController;
+  final mylist = new List<Choice>();
 
   @override
   void initState() {
     super.initState();
-    _tabController = new TabController(vsync: this, length: choices.length);
+    mylist.addAll(choices);
+    _tabController = new TabController(vsync: this, length: mylist.length);
   }
 
   @override
@@ -462,7 +464,14 @@ class _AppBarBottomSampleState extends State<AppBarBottomSample> with SingleTick
           leading: new IconButton(
             tooltip: 'Previous choice',
             icon: const Icon(Icons.arrow_back),
-            onPressed: () { _nextPage(-1); },
+            onPressed: () {
+//              _nextPage(-1);
+
+              setState(() {
+                mylist.add(new Choice(title: 'BICYCLE', icon: Icons.directions_bike));
+              });
+
+            },
           ),
           actions: <Widget>[
             new IconButton(
@@ -471,21 +480,21 @@ class _AppBarBottomSampleState extends State<AppBarBottomSample> with SingleTick
               onPressed: () { _nextPage(1); },
             ),
           ],
-          bottom: new PreferredSize(
-            preferredSize: const Size.fromHeight(48.0),
-            child: new Theme(
-              data: Theme.of(context).copyWith(accentColor: Colors.white),
-              child: new Container(
-                height: 48.0,
-                alignment: Alignment.center,
-                child: new TabPageSelector(controller: _tabController),
-              ),
-            ),
-          ),
+//          bottom: new PreferredSize(
+//            preferredSize: const Size.fromHeight(48.0),
+//            child: new Theme(
+//              data: Theme.of(context).copyWith(accentColor: Colors.white),
+//              child: new Container(
+//                height: 48.0,
+//                alignment: Alignment.center,
+//                child: new TabPageSelector(controller: _tabController),
+//              ),
+//            ),
+//          ),
         ),
-        body: new TabBarView(
-          controller: _tabController,
-          children: choices.map((Choice choice) {
+        body: new PageView(
+//          controller: _tabController,
+          children: mylist.map((Choice choice) {
             return new Padding(
               padding: const EdgeInsets.all(16.0),
               child: new ChoiceCard(choice: choice),
@@ -505,7 +514,7 @@ class Choice {
 
 const List<Choice> choices = const <Choice>[
   const Choice(title: 'CAR', icon: Icons.directions_car),
-  const Choice(title: 'BICYCLE', icon: Icons.directions_bike),
+//  const Choice(title: 'BICYCLE', icon: Icons.directions_bike),
   const Choice(title: 'BOAT', icon: Icons.directions_boat),
   const Choice(title: 'BUS', icon: Icons.directions_bus),
   const Choice(title: 'TRAIN', icon: Icons.directions_railway),
@@ -519,6 +528,7 @@ class ChoiceCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    print(choice.title);
     final TextStyle textStyle = Theme.of(context).textTheme.display1;
     return new Card(
       color: Colors.white,
@@ -539,7 +549,7 @@ class ChoiceCard extends StatelessWidget {
 void main() {
   runApp(new AppBarBottomSample());
 }
-*************************************viewpager案例*****************************************/
+************************************viewpager案例*****************************************/
 
 /***************************************diohttp案例****************************************
 import 'package:flutter_app/random/City.dart';

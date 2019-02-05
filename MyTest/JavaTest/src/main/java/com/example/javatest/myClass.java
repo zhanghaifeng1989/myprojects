@@ -4,12 +4,24 @@ package com.example.javatest;
 import java.util.ArrayList;
 
 public class myClass {
+
+
+
+
+
     public static void main(String[] arg){
          WeatherData weatherData = new WeatherData();
          CurrentConditionsDisplay currentDisplay = new CurrentConditionsDisplay(weatherData);
          weatherData.setMeasurements(1,2,3);
     }
 }
+
+
+
+
+
+
+
 
 interface  Subject{
     void registerObserver(MObserver o);

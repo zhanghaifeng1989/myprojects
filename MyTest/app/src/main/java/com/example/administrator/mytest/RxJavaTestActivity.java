@@ -1,5 +1,6 @@
 package com.example.administrator.mytest;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -24,7 +25,7 @@ import rx.schedulers.Schedulers;
  * compile 'io.reactivex:rxandroid:1.0.1'
  */
 
-public class RxJavaTestActivity extends AppCompatActivity {
+public class RxJavaTestActivity extends Activity {
     public String tag = "RxJavaTestActivity";
 
     @Override

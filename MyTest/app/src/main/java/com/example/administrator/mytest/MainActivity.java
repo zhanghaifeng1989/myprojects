@@ -1,5 +1,6 @@
 package com.example.administrator.mytest;
-
+import java.util.*;
+import android.app.Activity;
 import android.os.Environment;
 import android.os.Handler;
 import android.os.Message;
@@ -14,6 +15,7 @@ import net.lingala.zip4j.unzip.Unzip;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.ArrayList;
 
 import fr.arnaudguyon.xmltojsonlib.XmlToJson;
 import okhttp3.Call;
@@ -27,7 +29,8 @@ import okhttp3.RequestBody;
 import okhttp3.Response;
 import okhttp3.ResponseBody;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends Activity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

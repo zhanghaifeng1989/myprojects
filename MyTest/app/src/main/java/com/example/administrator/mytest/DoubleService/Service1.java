@@ -151,6 +151,15 @@ public class Service1 extends Service {
             builder.setSmallIcon(R.drawable.ic_launcher_foreground)
                     .setContentText("后台备份正在运行");
             startForeground(notificationId, builder.build());
+        }else{
+            NotificationManager notificationManager = (NotificationManager) Service1.this.getSystemService(Context.NOTIFICATION_SERVICE);
+
+            int notificationId = 0x1234;
+            Notification.Builder builder = new Notification.Builder(Service1.this);
+
+            builder.setSmallIcon(R.drawable.ic_launcher_foreground)
+                    .setContentText("后台备份正在运行");
+            notificationManager.notify(1,builder.getNotification());
         }
 
 

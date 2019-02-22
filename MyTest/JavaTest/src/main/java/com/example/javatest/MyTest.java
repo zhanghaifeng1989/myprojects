@@ -8,8 +8,8 @@ import java.util.HashMap;
 
 public class MyTest {
     public static void main(String[] args) {
-        Sample mSample1 =  new Sample();
-        Sample mSample2 = new Sample();
+        Sample mSample1 =  new Sample(2);
+        Sample mSample2 = new Sample(2);
         Integer mSample3 =  mSample1.getSample();
         Integer mSample4 = mSample2.getSample();
         System.out.println(mSample1==mSample2);
@@ -28,11 +28,12 @@ public class MyTest {
 }
 
 class Sample {
-    Integer s1 =  new Integer(2);
+    int  s1 =  1;
 //    static Sample mSample1 = new Sample();
 
-    public Sample() {
+    public Sample(int x ) {
 //         s1 = new Integer(2);
+        s1 = x;
         System.out.println(System.identityHashCode(s1));
 //        System.out.println("Sample()"+System.identityHashCode(s1));
 //        System.out.println("s1==="+System.identityHashCode(s1));
@@ -64,3 +65,7 @@ class Singleton1 {
         return single;
     }
 }
+
+
+
+

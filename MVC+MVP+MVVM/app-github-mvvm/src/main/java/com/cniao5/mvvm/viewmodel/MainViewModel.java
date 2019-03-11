@@ -6,6 +6,7 @@ import android.view.View;
 import com.cniao5.mvvm.model.GithubService;
 import com.cniao5.mvvm.model.Repo;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import rx.Observer;
@@ -55,9 +56,29 @@ public class MainViewModel {
 
                     @Override
                     public void onError(Throwable e) {
+//                        progressVisibility.set(View.GONE);
+//                        erroMessageVisibility.set(View.VISIBLE);
+//                        recyclerViewVisibility.set(View.GONE);
                         progressVisibility.set(View.GONE);
-                        erroMessageVisibility.set(View.VISIBLE);
-                        recyclerViewVisibility.set(View.GONE);
+                        erroMessageVisibility.set(View.GONE);
+                        recyclerViewVisibility.set(View.VISIBLE);
+
+                        List<Repo> list = new ArrayList<Repo>();
+                        Repo repo1 = new Repo();
+                        List<Repo.ContributorsBean> cons1 = new ArrayList<Repo.ContributorsBean>();
+                        Repo.ContributorsBean con1 = new Repo.ContributorsBean();
+                        con1.setName("Adrian Serrano");
+                        con1.setAvatar("https://avatars0.githubusercontent.com/u/15056957?s=460&amp&v=4");
+                        cons1.add(con1);
+                        repo1.setContributors(cons1);
+                        repo1.setDes("Open Source, Distributed, RESTful Search Engine");
+                        repo1.setMeta("38971");
+                        repo1.setName("elasticsearch");
+                        repo1.setOwner("elastic");
+                        repo1.setHref("1");
+                        list.add(repo1);
+                        repoList = list;
+                        mListener.repoDataChanage(repoList);
                     }
 
                     @Override

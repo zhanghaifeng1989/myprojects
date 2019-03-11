@@ -14,6 +14,7 @@ import com.cniao5.mvc.adapter.RepoListAdapter;
 import com.cniao5.mvc.model.GithubService;
 import com.cniao5.mvc.model.Repo;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import rx.Observer;
@@ -59,9 +60,26 @@ public class MainActivity extends AppCompatActivity {
 
                     @Override
                     public void onError(Throwable e) {
+//                        progress.setVisibility(View.GONE);
+//                        text_info.setVisibility(View.VISIBLE);
+//                        recyclerView.setVisibility(View.GONE);
                         progress.setVisibility(View.GONE);
-                        text_info.setVisibility(View.VISIBLE);
-                        recyclerView.setVisibility(View.GONE);
+
+                        List<Repo> list = new ArrayList<Repo>();
+                        Repo repo1 = new Repo();
+                        List<Repo.ContributorsBean> cons1 = new ArrayList<Repo.ContributorsBean>();
+                        Repo.ContributorsBean con1 = new Repo.ContributorsBean();
+                        con1.setName("Adrian Serrano");
+                        con1.setAvatar("https://avatars0.githubusercontent.com/u/15056957?s=460&amp&v=4");
+                        cons1.add(con1);
+                        repo1.setContributors(cons1);
+                        repo1.setDes("Open Source, Distributed, RESTful Search Engine");
+                        repo1.setMeta("38971");
+                        repo1.setName("elasticsearch");
+                        repo1.setOwner("elastic");
+                        repo1.setHref("1");
+                        list.add(repo1);
+                        setupRecyclerView(recyclerView,list);
                     }
 
                     @Override

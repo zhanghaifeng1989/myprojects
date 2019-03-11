@@ -3,6 +3,7 @@ package com.cniao5.mvp.presenter.impl;
 import com.cniao5.mvp.model.GithubService;
 import com.cniao5.mvp.model.Repository;
 import com.cniao5.mvp.presenter.UserRepoPresenter;
+import com.cniao5.mvp.view.BaseView;
 import com.cniao5.mvp.view.UserRepoBaseView;
 
 import java.util.List;
@@ -24,7 +25,7 @@ public class UserRepoPresenterImpl implements UserRepoPresenter {
 
     @Override
     public void attachView(UserRepoBaseView view) {
-        this.userRepoBaseView = view ;
+        this.userRepoBaseView =  view ;
     }
 
     @Override

@@ -13,8 +13,5 @@ public class DialogActivity extends Activity{
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Dialog dialog = new Dialog(this);
-        dialog.setContentView();
-        dialog.show();
     }
 }

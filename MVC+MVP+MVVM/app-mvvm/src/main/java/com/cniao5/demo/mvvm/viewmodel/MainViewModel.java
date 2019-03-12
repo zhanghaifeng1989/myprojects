@@ -1,11 +1,17 @@
 package com.cniao5.demo.mvvm.viewmodel;
 
 import android.content.Context;
+import android.databinding.BindingAdapter;
+import android.databinding.ObservableInt;
 import android.text.Editable;
 import android.text.TextUtils;
 import android.text.TextWatcher;
 import android.view.View;
+import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Toast;
+
+import java.util.Observable;
 
 /**
  * <p>Description:
@@ -20,8 +26,12 @@ public class MainViewModel {
 
     private Context mContext ;
 
+
+    public ObservableInt testint = new ObservableInt();
+
     public MainViewModel(Context context){
         this.mContext = context ;
+        testint.set(0);
     }
 
     public TextWatcher userNameChangeListener(){
@@ -75,6 +85,20 @@ public class MainViewModel {
             }
         }else{
             Toast.makeText(mContext,"用户名和密码不能为空",Toast.LENGTH_SHORT).show();
+        }
+    }
+    @BindingAdapter({"mytest"})
+    public static void myTest(Button btn, int index){
+        btn.setText(String.valueOf(index));
+    }
+
+    public void test(View view){
+        if(testint.get() == 0){
+            Toast.makeText(mContext,"testint == 0",Toast.LENGTH_SHORT).show();
+            testint.set(1);
+        }else{
+            Toast.makeText(mContext,"testint != 0",Toast.LENGTH_SHORT).show();
+            testint.set(0);
         }
     }
 

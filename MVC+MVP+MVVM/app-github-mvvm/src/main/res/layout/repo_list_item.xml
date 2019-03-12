@@ -118,7 +118,6 @@
             android:layout_gravity="bottom|right"
             android:padding="8dp"
             android:onClick="@{viewModel.onFavClick}"
-            app:favStar="@{viewModel.favImageId}"/>
-
+            app:favStar="@{viewModel.favStarImage}"/>
     </android.support.v7.widget.CardView>
 </layout>

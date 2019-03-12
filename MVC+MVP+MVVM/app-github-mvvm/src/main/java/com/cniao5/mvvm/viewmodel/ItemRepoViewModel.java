@@ -7,7 +7,9 @@ import android.databinding.ObservableInt;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.cniao5.mvvm.R;
 import com.cniao5.mvvm.model.Repo;
@@ -69,15 +71,7 @@ public class ItemRepoViewModel {
         openUserRepoActivity(repo.getContributors().get(4).getName());
     }
 
-    public void onFavClick(View view){
-        if(FavoReposHelper.getInstance().contains(repo)){
-            favStarImage.set(R.drawable.ic_star_unchecked);
-            FavoReposHelper.getInstance().removeFavo(repo);
-        }else{
-            favStarImage.set(R.drawable.ic_star_checked);
-            FavoReposHelper.getInstance().addFavo(repo);
-        }
-    }
+
 
 
     @BindingAdapter({"avatarUrl"})
@@ -90,6 +84,16 @@ public class ItemRepoViewModel {
     @BindingAdapter({"favStar"})
     public static void setFavImageRes(ImageView image,int id){
         image.setImageResource(id);
+    }
+
+    public void onFavClick(View view){
+        if(FavoReposHelper.getInstance().contains(repo)){
+            favStarImage.set(R.drawable.ic_star_unchecked);
+            FavoReposHelper.getInstance().removeFavo(repo);
+        }else{
+            favStarImage.set(R.drawable.ic_star_checked);
+            FavoReposHelper.getInstance().addFavo(repo);
+        }
     }
 
     public int getFavImageId(){

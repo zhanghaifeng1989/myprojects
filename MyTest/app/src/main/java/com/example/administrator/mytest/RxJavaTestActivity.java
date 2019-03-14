@@ -6,13 +6,7 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
-import rx.Observable;
-import rx.Observer;
-import rx.Subscriber;
-import rx.android.schedulers.AndroidSchedulers;
-import rx.functions.Action0;
-import rx.functions.Action1;
-import rx.schedulers.Schedulers;
+
 
 /**
  * Created by Administrator on 2018/10/29.

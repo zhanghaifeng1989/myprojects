@@ -9,6 +9,7 @@ import com.cniao5.mvp.view.UserRepoBaseView;
 import java.util.List;
 
 import rx.Observer;
+import rx.Subscription;
 import rx.android.schedulers.AndroidSchedulers;
 import rx.schedulers.Schedulers;
 
@@ -37,6 +38,7 @@ public class UserRepoPresenterImpl implements UserRepoPresenter {
     public void loadGitHubUserRepo(String userName) {
 
         userRepoBaseView.showProgress();
+
         GithubService.Factory.create().publicRepositories(userName)
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribeOn(Schedulers.io())

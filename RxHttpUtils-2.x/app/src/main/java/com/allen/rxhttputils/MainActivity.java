@@ -97,6 +97,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (v.getId()) {
 
             case R.id.global_http:
+
                 RxHttpUtils
                         .createApi(ApiService.class)
                         .getBook()
@@ -250,130 +251,130 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 selectPhotoWithPermission(MAX_SELECTABLE);
                 break;
             case R.id.single_http_default:
-                RxHttpUtils
-                        .getSInstance()
-                        .baseUrl("https://api.douban.com/")
-                        .createSApi(ApiService.class)
-                        .getTop250(5)
-                        .compose(Transformer.<Top250Bean>switchSchedulers(loading_dialog))
-                        .subscribe(new CommonObserver<Top250Bean>() {
-                            @Override
-                            protected String setTag() {
-                                return "tag4";
-                            }
-
-                            @Override
-                            protected void onError(String errorMsg) {
-
-                            }
-
-                            @Override
-                            protected void onSuccess(Top250Bean top250Bean) {
-                                StringBuilder sb = new StringBuilder();
-                                for (Top250Bean.SubjectsBean s : top250Bean.getSubjects()) {
-                                    sb.append(s.getTitle() + "\n");
-                                }
-                                responseTv.setText(sb.toString());
-                                //请求成功
-                                showToast(sb.toString());
-                            }
-                        });
+//                RxHttpUtils
+//                        .getSInstance()
+//                        .baseUrl("https://api.douban.com/")
+//                        .createSApi(ApiService.class)
+//                        .getTop250(5)
+//                        .compose(Transformer.<Top250Bean>switchSchedulers(loading_dialog))
+//                        .subscribe(new CommonObserver<Top250Bean>() {
+//                            @Override
+//                            protected String setTag() {
+//                                return "tag4";
+//                            }
+//
+//                            @Override
+//                            protected void onError(String errorMsg) {
+//
+//                            }
+//
+//                            @Override
+//                            protected void onSuccess(Top250Bean top250Bean) {
+//                                StringBuilder sb = new StringBuilder();
+//                                for (Top250Bean.SubjectsBean s : top250Bean.getSubjects()) {
+//                                    sb.append(s.getTitle() + "\n");
+//                                }
+//                                responseTv.setText(sb.toString());
+//                                //请求成功
+//                                showToast(sb.toString());
+//                            }
+//                        });
                 break;
 
             case R.id.single_http:
 
-                RxHttpUtils
-                        //单个请求的实例getSInstance(getSingleInstance的缩写)
-                        .getSInstance()
-                        //单个请求的baseUrl
-                        .baseUrl("https://api.douban.com/")
-                        //单个请求的header
-                        .addHeaders(new BuildHeadersListener() {
-                            @Override
-                            public Map<String, String> buildHeaders() {
-                                Map<String, String> headerMaps = new TreeMap<>();
-                                headerMaps.put("header1", "header1");
-                                headerMaps.put("header2", "header2");
-                                return headerMaps;
-                            }
-                        })
-                        //单个请求是否开启缓存
-                        .cache(true)
-                        //单个请求的缓存路径及缓存大小，不设置的话有默认值
-                        .cachePath("cachePath", 1024 * 1024 * 100)
-                        //单个请求的ssl证书认证,支持三种认证方式
-                        //信任所有证书,不安全有风险
-                        .sslSocketFactory()
-                        //使用预埋证书，校验服务端证书（自签名证书）
-                        //.setSslSocketFactory(getAssets().open("your.cer"))
-                        //使用bks证书和密码管理客户端证书（双向认证），使用预埋证书，校验服务端证书（自签名证书）
-                        //.setSslSocketFactory(getAssets().open("your.bks"), "123456", getAssets().open("your.cer"))
-                        //单个请求是否持久化cookie
-                        .cookieType(new MemoryCookieStore())
-                        //单个请求超时
-                        .writeTimeout(10)
-                        .readTimeout(10)
-                        .connectTimeout(10)
-                        //单个请求是否开启log日志
-                        .log(true)
-                        //区分全局变量的请求createSApi(createSingleApi的缩写)
-                        .createSApi(ApiService.class)
-                        //自己ApiService中的方法名
-                        .getTop250(10)
-                        //内部配置了线程切换相关策略
-                        //如果需要请求loading需要传入自己的loading_dialog
-                        //使用loading的话需要在CommonObserver<XXX>(loading_dialog)中也传去
-                        .compose(Transformer.<Top250Bean>switchSchedulers(loading_dialog))
-                        .subscribe(new CommonObserver<Top250Bean>() {
-                            //默认false
+//                RxHttpUtils
+//                        //单个请求的实例getSInstance(getSingleInstance的缩写)
+//                        .getSInstance()
+//                        //单个请求的baseUrl
+//                        .baseUrl("https://api.douban.com/")
+//                        //单个请求的header
+//                        .addHeaders(new BuildHeadersListener() {
 //                            @Override
-//                            public boolean isHideToast() {
-//                                return true;
+//                            public Map<String, String> buildHeaders() {
+//                                Map<String, String> headerMaps = new TreeMap<>();
+//                                headerMaps.put("header1", "header1");
+//                                headerMaps.put("header2", "header2");
+//                                return headerMaps;
 //                            }
-
-                            @Override
-                            protected void onError(String errorMsg) {
-                                //错误处理
-                            }
-
-                            @Override
-                            protected void onSuccess(Top250Bean top250Bean) {
-                                StringBuilder sb = new StringBuilder();
-                                for (Top250Bean.SubjectsBean s : top250Bean.getSubjects()) {
-                                    sb.append(s.getTitle() + "\n");
-                                }
-                                responseTv.setText(sb.toString());
-                                //请求成功
-                                showToast(sb.toString());
-                            }
-                        });
+//                        })
+//                        //单个请求是否开启缓存
+//                        .cache(true)
+//                        //单个请求的缓存路径及缓存大小，不设置的话有默认值
+//                        .cachePath("cachePath", 1024 * 1024 * 100)
+//                        //单个请求的ssl证书认证,支持三种认证方式
+//                        //信任所有证书,不安全有风险
+//                        .sslSocketFactory()
+//                        //使用预埋证书，校验服务端证书（自签名证书）
+//                        //.setSslSocketFactory(getAssets().open("your.cer"))
+//                        //使用bks证书和密码管理客户端证书（双向认证），使用预埋证书，校验服务端证书（自签名证书）
+//                        //.setSslSocketFactory(getAssets().open("your.bks"), "123456", getAssets().open("your.cer"))
+//                        //单个请求是否持久化cookie
+//                        .cookieType(new MemoryCookieStore())
+//                        //单个请求超时
+//                        .writeTimeout(10)
+//                        .readTimeout(10)
+//                        .connectTimeout(10)
+//                        //单个请求是否开启log日志
+//                        .log(true)
+//                        //区分全局变量的请求createSApi(createSingleApi的缩写)
+//                        .createSApi(ApiService.class)
+//                        //自己ApiService中的方法名
+//                        .getTop250(10)
+//                        //内部配置了线程切换相关策略
+//                        //如果需要请求loading需要传入自己的loading_dialog
+//                        //使用loading的话需要在CommonObserver<XXX>(loading_dialog)中也传去
+//                        .compose(Transformer.<Top250Bean>switchSchedulers(loading_dialog))
+//                        .subscribe(new CommonObserver<Top250Bean>() {
+//                            //默认false
+////                            @Override
+////                            public boolean isHideToast() {
+////                                return true;
+////                            }
+//
+//                            @Override
+//                            protected void onError(String errorMsg) {
+//                                //错误处理
+//                            }
+//
+//                            @Override
+//                            protected void onSuccess(Top250Bean top250Bean) {
+//                                StringBuilder sb = new StringBuilder();
+//                                for (Top250Bean.SubjectsBean s : top250Bean.getSubjects()) {
+//                                    sb.append(s.getTitle() + "\n");
+//                                }
+//                                responseTv.setText(sb.toString());
+//                                //请求成功
+//                                showToast(sb.toString());
+//                            }
+//                        });
                 break;
             case R.id.single_string_http:
-                RxHttpUtils.getSInstance()
-                        .baseUrl("https://api.douban.com/")
-                        .addConverterFactory(ScalarsConverterFactory.create())
-                        .addConverterFactory(GsonConverterFactory.create())
-                        .createSApi(ApiService.class)
-                        .getBookString()
-                        .compose(Transformer.<String>switchSchedulers(loading_dialog))
-                        .subscribe(new StringObserver() {
-                            //默认false   是否隐藏onError的提示
-                            @Override
-                            protected boolean isHideToast() {
-                                return false;
-                            }
-
-                            @Override
-                            protected void onError(String errorMsg) {
-
-                            }
-
-                            @Override
-                            protected void onSuccess(String data) {
-                                showToast(data);
-                                responseTv.setText(data);
-                            }
-                        });
+//                RxHttpUtils.getSInstance()
+//                        .baseUrl("https://api.douban.com/")
+//                        .addConverterFactory(ScalarsConverterFactory.create())
+//                        .addConverterFactory(GsonConverterFactory.create())
+//                        .createSApi(ApiService.class)
+//                        .getBookString()
+//                        .compose(Transformer.<String>switchSchedulers(loading_dialog))
+//                        .subscribe(new StringObserver() {
+//                            //默认false   是否隐藏onError的提示
+//                            @Override
+//                            protected boolean isHideToast() {
+//                                return false;
+//                            }
+//
+//                            @Override
+//                            protected void onError(String errorMsg) {
+//
+//                            }
+//
+//                            @Override
+//                            protected void onSuccess(String data) {
+//                                showToast(data);
+//                                responseTv.setText(data);
+//                            }
+//                        });
 
                 break;
 

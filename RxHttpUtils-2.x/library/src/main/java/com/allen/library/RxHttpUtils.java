@@ -9,7 +9,6 @@ import com.allen.library.cookie.CookieJarImpl;
 import com.allen.library.cookie.store.CookieStore;
 import com.allen.library.download.DownloadRetrofit;
 import com.allen.library.http.GlobalRxHttp;
-import com.allen.library.http.SingleRxHttp;
 import com.allen.library.manage.RxHttpManager;
 import com.allen.library.upload.UploadRetrofit;
 
@@ -93,19 +92,7 @@ public class RxHttpUtils {
         return GlobalRxHttp.createGApi(cls);
     }
 
-    /**
-     * 获取单个请求配置实例
-     * 后续版本即将移除---推荐使用全局配置的请求
-     *
-     * @return SingleRxHttp
-     */
-    @Deprecated
-    public static SingleRxHttp getSInstance() {
-
-        return SingleRxHttp.getInstance();
-    }
-
-
+    
     /**
      * 下载文件
      *

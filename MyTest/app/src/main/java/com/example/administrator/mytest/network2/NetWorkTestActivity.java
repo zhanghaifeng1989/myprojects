@@ -1,49 +1,28 @@
 package com.example.administrator.mytest.network2;
 
-import android.Manifest;
-import android.annotation.SuppressLint;
+
 import android.annotation.TargetApi;
 import android.content.Intent;
-import android.content.pm.ActivityInfo;
-import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-
+import com.chivox.student.kami.library.RxHttpUtils;
+import com.chivox.student.kami.library.interfaces.ILoadingView;
+import com.chivox.student.kami.library.observer.CommonObserver;
 import com.example.administrator.mytest.R;
 import com.example.administrator.mytest.network2.api.ApiService;
 import com.example.administrator.mytest.network2.entity.BookBean;
-import com.example.administrator.mytest.network2.interceptor.Transformer;
-import com.example.administrator.mytest.network2.interfaces.ILoadingView;
-import com.example.administrator.mytest.network2.observer.CommonObserver;
 import com.example.administrator.mytest.network2.widget.LoadingDialog;
 import com.tbruyelle.rxpermissions2.RxPermissions;
 
-import java.io.File;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-import java.util.TreeMap;
+import javax.xml.transform.Transformer;
 
 
-import io.reactivex.ObservableSource;
-import io.reactivex.annotations.NonNull;
-import io.reactivex.functions.Consumer;
-import io.reactivex.functions.Function;
-import okhttp3.MediaType;
-import okhttp3.MultipartBody;
-import okhttp3.RequestBody;
-import okhttp3.ResponseBody;
-import retrofit2.converter.gson.GsonConverterFactory;
-import retrofit2.converter.scalars.ScalarsConverterFactory;
 
-import static com.example.administrator.mytest.network2.utils.ToastUtils.showToast;
 
 
 public class NetWorkTestActivity extends AppCompatActivity implements View.OnClickListener {
@@ -51,6 +30,7 @@ public class NetWorkTestActivity extends AppCompatActivity implements View.OnCli
     private Button download_http, download_cancel_http;
     private ILoadingView loading_dialog;
     private TextView responseTv;
+
 
     private int REQUEST_CODE_CHOOSE = 1;
     private String UPLOAD_URL = "http://t.xinhuo.com/index.php/Api/Pic/uploadPic";
@@ -100,7 +80,10 @@ public class NetWorkTestActivity extends AppCompatActivity implements View.OnCli
                             protected boolean isHideToast() {
                                 return false;
                             }
-                            //tag下的一组或一个请求，用来处理一个页面的所以请求或者某个请求
+                            //tag下的一组或一个请求，用来处理一个页面的所以请求
+
+
+                            // 或者某个请求
                             //设置一个tag就行就可以取消当前页面所有请求或者某个请求了
                             @Override
                             protected String setTag() {
@@ -116,7 +99,7 @@ public class NetWorkTestActivity extends AppCompatActivity implements View.OnCli
                             protected void onSuccess(BookBean bookBean) {
                                 String s = bookBean.getSummary();
                                 responseTv.setText(s);
-                                showToast(s);
+//                                showToast(s);
                             }
                         });
 

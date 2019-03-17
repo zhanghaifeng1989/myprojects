@@ -17,7 +17,7 @@
 #}
 #---------------------------------1.实体类---------------------------------
 
--keep class com.allen.library.base.**{*;}
+-keep class com.allen.library.observer.base.**{*;}
 
 ###########okhttp混淆配置
 -dontwarn com.squareup.okhttp.**

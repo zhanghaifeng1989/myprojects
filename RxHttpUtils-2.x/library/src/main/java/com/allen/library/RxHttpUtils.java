@@ -4,20 +4,18 @@ import android.annotation.SuppressLint;
 import android.app.Application;
 import android.content.Context;
 
-import com.allen.library.config.OkHttpConfig;
-import com.allen.library.cookie.CookieJarImpl;
-import com.allen.library.cookie.store.CookieStore;
-import com.allen.library.download.DownloadRetrofit;
-import com.allen.library.http.GlobalRxHttp;
-import com.allen.library.manage.RxHttpManager;
-import com.allen.library.upload.UploadRetrofit;
+import com.allen.library.rxhttp.retrofit.RetrofitConfig;
+import com.allen.library.rxhttp.download.DownloadRetrofit;
+import com.allen.library.rxhttp.RxHttpClient;
+import com.allen.library.rxhttp.RxHttpManager;
+import com.allen.library.rxhttp.upload.UploadRetrofit;
 
 import java.util.List;
 import java.util.Map;
 
 import io.reactivex.Observable;
-import okhttp3.Cookie;
-import okhttp3.HttpUrl;
+import io.reactivex.annotations.NonNull;
+import okhttp3.OkHttpClient;
 import okhttp3.ResponseBody;
 
 /**
@@ -60,7 +58,7 @@ public class RxHttpUtils {
     /**
      * 获取全局上下文
      */
-    public static Context getContext() {
+    public  static Context getContext() {
         checkInitialize();
         return context;
     }
@@ -75,9 +73,12 @@ public class RxHttpUtils {
     }
 
 
-    public GlobalRxHttp config() {
+    public RxHttpClient commonConfig(@NonNull String baseurl, OkHttpClient okHttpClient, RetrofitConfig retrofitConfig) {
         checkInitialize();
-        return GlobalRxHttp.getInstance();
+        RxHttpClient.getInstance().setBaseUrl(baseurl);
+        RxHttpClient.getInstance().setOkClient(okHttpClient);
+        RxHttpClient.getInstance().setRetrofitConfig(retrofitConfig);
+        return RxHttpClient.getInstance();
     }
 
 
@@ -88,8 +89,8 @@ public class RxHttpUtils {
      * @param <K> K
      * @return 返回
      */
-    public static <K> K createApi(Class<K> cls) {
-        return GlobalRxHttp.createGApi(cls);
+    public   <K> K createApi(Class<K> cls) {
+        return RxHttpClient.getInstance().createGApi(cls);
     }
 
     
@@ -143,57 +144,6 @@ public class RxHttpUtils {
      */
     public static Observable<ResponseBody> uploadImagesWithParams(String uploadUrl, String fileName, Map<String, Object> paramsMap, List<String> filePaths) {
         return UploadRetrofit.uploadFilesWithParams(uploadUrl, fileName, paramsMap, filePaths);
-    }
-
-    /**
-     * 获取全局的CookieJarImpl实例
-     */
-    private static CookieJarImpl getCookieJar() {
-        return (CookieJarImpl) OkHttpConfig.getOkHttpClient().cookieJar();
-    }
-
-    /**
-     * 获取全局的CookieStore实例
-     */
-    private static CookieStore getCookieStore() {
-        return getCookieJar().getCookieStore();
-    }
-
-    /**
-     * 获取所有cookie
-     */
-    public static List<Cookie> getAllCookie() {
-        CookieStore cookieStore = getCookieStore();
-        List<Cookie> allCookie = cookieStore.getAllCookie();
-        return allCookie;
-    }
-
-    /**
-     * 获取某个url所对应的全部cookie
-     */
-    public static List<Cookie> getCookieByUrl(String url) {
-        CookieStore cookieStore = getCookieStore();
-        HttpUrl httpUrl = HttpUrl.parse(url);
-        List<Cookie> cookies = cookieStore.getCookie(httpUrl);
-        return cookies;
-    }
-
-
-    /**
-     * 移除全部cookie
-     */
-    public static void removeAllCookie() {
-        CookieStore cookieStore = getCookieStore();
-        cookieStore.removeAllCookie();
-    }
-
-    /**
-     * 移除某个url下的全部cookie
-     */
-    public static void removeCookieByUrl(String url) {
-        HttpUrl httpUrl = HttpUrl.parse(url);
-        CookieStore cookieStore = getCookieStore();
-        cookieStore.removeCookie(httpUrl);
     }
 
     /**

@@ -1,6 +1,6 @@
 package com.allen.library.interfaces;
 
-import com.allen.library.bean.BaseData;
+import com.allen.library.observer.bean.BaseData;
 
 import io.reactivex.disposables.Disposable;
 

@@ -15,8 +15,6 @@ import java.text.ParseException;
 import retrofit2.HttpException;
 
 /**
- * @author Allen
- * Created by Allen on 2017/10/23.
  * 异常类型
  */
 

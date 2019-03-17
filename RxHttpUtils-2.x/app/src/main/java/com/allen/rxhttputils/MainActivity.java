@@ -15,10 +15,8 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.allen.library.RxHttpUtils;
-import com.allen.library.cookie.store.MemoryCookieStore;
-import com.allen.library.download.DownloadObserver;
-import com.allen.library.interceptor.Transformer;
-import com.allen.library.interfaces.BuildHeadersListener;
+import com.allen.library.rxhttp.download.DownloadObserver;
+import com.allen.library.rxhttp.Transformer;
 import com.allen.library.interfaces.ILoadingView;
 import com.allen.library.observer.CommonObserver;
 import com.allen.library.observer.StringObserver;
@@ -38,7 +36,6 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-import java.util.TreeMap;
 
 import io.reactivex.ObservableSource;
 import io.reactivex.annotations.NonNull;
@@ -48,8 +45,6 @@ import okhttp3.MediaType;
 import okhttp3.MultipartBody;
 import okhttp3.RequestBody;
 import okhttp3.ResponseBody;
-import retrofit2.converter.gson.GsonConverterFactory;
-import retrofit2.converter.scalars.ScalarsConverterFactory;
 
 import static com.allen.library.utils.ToastUtils.showToast;
 
@@ -99,6 +94,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.global_http:
 
                 RxHttpUtils
+                        .getInstance()
                         .createApi(ApiService.class)
                         .getBook()
                         .compose(Transformer.<BookBean>switchSchedulers(loading_dialog))
@@ -133,6 +129,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.global_string_http:
                 RxHttpUtils
+                        .getInstance()
                         .createApi(ApiService.class)
                         .getBookString()
                         .compose(Transformer.<String>switchSchedulers(loading_dialog))
@@ -159,12 +156,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.multiple_http:
 
                 RxHttpUtils
+                        .getInstance()
                         .createApi(ApiService.class)
                         .getBook()
                         .flatMap(new Function<BookBean, ObservableSource<Top250Bean>>() {
                             @Override
                             public ObservableSource<Top250Bean> apply(@NonNull BookBean bookBean) throws Exception {
                                 return RxHttpUtils
+                                        .getInstance()
                                         .createApi(ApiService.class)
                                         .getTop250(20);
                             }
@@ -407,7 +406,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void uploadImgWithGlobalConfig(List<String> filePaths) {
 
         //以下使用的是全局配置
-        RxHttpUtils.createApi(ApiService.class)
+        RxHttpUtils.getInstance().createApi(ApiService.class)
                 .uploadFiles(UPLOAD_URL, getMultipartPart("uploaded_file", null, filePaths))
                 .compose(Transformer.<String>switchSchedulers(loading_dialog))
                 .subscribe(new StringObserver() {

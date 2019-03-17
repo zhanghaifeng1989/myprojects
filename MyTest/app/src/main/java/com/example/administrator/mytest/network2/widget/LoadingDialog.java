@@ -4,8 +4,8 @@ import android.app.Dialog;
 import android.content.Context;
 import android.os.Bundle;
 
+import com.chivox.student.kami.library.interfaces.ILoadingView;
 import com.example.administrator.mytest.R;
-import com.example.administrator.mytest.network2.interfaces.ILoadingView;
 
 
 /***

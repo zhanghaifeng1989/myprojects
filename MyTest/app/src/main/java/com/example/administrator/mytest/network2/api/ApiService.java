@@ -1,19 +1,14 @@
 package com.example.administrator.mytest.network2.api;
 
 
+
+
+import android.database.Observable;
+
 import com.example.administrator.mytest.network2.entity.BookBean;
 import com.example.administrator.mytest.network2.entity.Top250Bean;
+ import java.util.List;
 
-import java.util.List;
-
-import io.reactivex.Observable;
-import okhttp3.MultipartBody;
-import retrofit2.http.GET;
-import retrofit2.http.Multipart;
-import retrofit2.http.POST;
-import retrofit2.http.Part;
-import retrofit2.http.Query;
-import retrofit2.http.Url;
 
 /**
  * Created by allen on 2016/12/26.

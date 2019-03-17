@@ -2,8 +2,8 @@ package com.allen.library.observer;
 
 import android.text.TextUtils;
 
-import com.allen.library.base.BaseDataObserver;
-import com.allen.library.bean.BaseData;
+import com.allen.library.observer.base.BaseDataObserver;
+import com.allen.library.observer.bean.BaseData;
 import com.allen.library.utils.ToastUtils;
 
 import io.reactivex.disposables.Disposable;

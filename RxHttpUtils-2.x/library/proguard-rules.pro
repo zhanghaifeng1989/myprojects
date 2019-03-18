@@ -17,7 +17,7 @@
 #}
 #---------------------------------1.实体类---------------------------------
 
--keep class com.allen.library.observer.base.**{*;}
+-keep class com.chivox.student.kami.library.network.observer.base.**{*;}
 
 ###########okhttp混淆配置
 -dontwarn com.squareup.okhttp.**

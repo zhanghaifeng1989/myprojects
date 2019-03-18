@@ -14,12 +14,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.allen.library.RxHttpUtils;
-import com.allen.library.rxhttp.download.DownloadObserver;
-import com.allen.library.rxhttp.Transformer;
-import com.allen.library.interfaces.ILoadingView;
-import com.allen.library.observer.CommonObserver;
-import com.allen.library.observer.StringObserver;
+import com.chivox.student.kami.library.network.RxHttpUtils;
+import com.chivox.student.kami.library.network.rxhttp.download.DownloadObserver;
+import com.chivox.student.kami.library.network.rxhttp.Transformer;
+import com.chivox.student.kami.library.network.interfaces.ILoadingView;
+import com.chivox.student.kami.library.network.observer.CommonObserver;
+import com.chivox.student.kami.library.network.observer.StringObserver;
 import com.allen.rxhttputils.api.ApiService;
 import com.allen.rxhttputils.bean.BookBean;
 import com.allen.rxhttputils.bean.Top250Bean;
@@ -46,7 +46,7 @@ import okhttp3.MultipartBody;
 import okhttp3.RequestBody;
 import okhttp3.ResponseBody;
 
-import static com.allen.library.utils.ToastUtils.showToast;
+import static com.chivox.student.kami.library.network.utils.ToastUtils.showToast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 

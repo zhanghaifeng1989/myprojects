@@ -4,7 +4,7 @@ import android.app.Dialog;
 import android.content.Context;
 import android.os.Bundle;
 
-import com.allen.library.interfaces.ILoadingView;
+import com.chivox.student.kami.library.network.interfaces.ILoadingView;
 import com.allen.rxhttputils.R;
 
 

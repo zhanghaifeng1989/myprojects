@@ -3,16 +3,9 @@ package com.allen.rxhttputils;
 
 import android.app.Application;
 
-import com.allen.library.RxHttpUtils;
-import com.allen.library.interfaces.BuildHeadersListener;
-import com.allen.library.rxhttp.OkHttpConfig;
+import com.chivox.student.kami.library.network.RxHttpUtils;
+import com.chivox.student.kami.library.network.rxhttp.OkHttpConfig;
 import com.allen.rxhttputils.api.BaseUrls;
-
-import java.net.URLEncoder;
-import java.util.HashMap;
-import java.util.Map;
-
-import okhttp3.OkHttpClient;
 
 
 /**
@@ -29,8 +22,6 @@ public class App extends Application {
         super.onCreate();
 
         initRxHttpUtils();
-       // initCustomRxHttpUtils();
-
     }
 
 
@@ -38,9 +29,12 @@ public class App extends Application {
      * 快速上手，默认配置
      */
     private void initRxHttpUtils() {
+        OkHttpConfig okhttpconfig = new OkHttpConfig();
+        okhttpconfig.setDebug(true);
+        okhttpconfig.build();
         RxHttpUtils
                 .getInstance()
                 .init(this)
-                .commonConfig(BaseUrls.baseurl,null,null);
+                .commonConfig(BaseUrls.baseurl,okhttpconfig.getOkHttpClient(),null);
     }
 }

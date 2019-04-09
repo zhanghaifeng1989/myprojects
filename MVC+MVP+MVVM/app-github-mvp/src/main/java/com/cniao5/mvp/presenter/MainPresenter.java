@@ -11,5 +11,5 @@ import com.cniao5.mvp.view.MainBaseView;
 
 public interface MainPresenter extends BasePresenter<MainBaseView> {
     //在这里添加MainPresenter特有的方法
-    void loadGitHubJava() ;
+    void loadGitHubJava();
 }

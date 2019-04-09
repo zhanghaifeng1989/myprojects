@@ -250,34 +250,32 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 selectPhotoWithPermission(MAX_SELECTABLE);
                 break;
             case R.id.single_http_default:
-//                RxHttpUtils
-//                        .getSInstance()
-//                        .baseUrl("https://api.douban.com/")
-//                        .createSApi(ApiService.class)
-//                        .getTop250(5)
-//                        .compose(Transformer.<Top250Bean>switchSchedulers(loading_dialog))
-//                        .subscribe(new CommonObserver<Top250Bean>() {
-//                            @Override
-//                            protected String setTag() {
-//                                return "tag4";
-//                            }
-//
-//                            @Override
-//                            protected void onError(String errorMsg) {
-//
-//                            }
-//
-//                            @Override
-//                            protected void onSuccess(Top250Bean top250Bean) {
-//                                StringBuilder sb = new StringBuilder();
-//                                for (Top250Bean.SubjectsBean s : top250Bean.getSubjects()) {
-//                                    sb.append(s.getTitle() + "\n");
-//                                }
-//                                responseTv.setText(sb.toString());
-//                                //请求成功
-//                                showToast(sb.toString());
-//                            }
-//                        });
+                RxHttpUtils
+                        .getInstance()
+                        .createApi(ApiService.class)
+                        .getTop250(5)
+                        .subscribe(new CommonObserver<Top250Bean>() {
+                            @Override
+                            protected String setTag() {
+                                return "tag4";
+                            }
+
+                            @Override
+                            protected void onError(String errorMsg) {
+
+                            }
+
+                            @Override
+                            protected void onSuccess(Top250Bean top250Bean) {
+                                StringBuilder sb = new StringBuilder();
+                                for (Top250Bean.SubjectsBean s : top250Bean.getSubjects()) {
+                                    sb.append(s.getTitle() + "\n");
+                                }
+                                responseTv.setText(sb.toString());
+                                //请求成功
+                                showToast(sb.toString());
+                            }
+                        });
                 break;
 
             case R.id.single_http:

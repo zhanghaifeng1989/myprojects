@@ -6,6 +6,12 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
+import org.reactivestreams.Subscriber;
+import org.reactivestreams.Subscription;
+
+import io.reactivex.Observable;
+import io.reactivex.Observer;
+import io.reactivex.disposables.Disposable;
 
 
 /**
@@ -26,18 +32,27 @@ public class RxJavaTestActivity extends Activity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.rxjavatestctivity);
-         /****************************************RXJava完整流程*********************************************
+         /****************************************RXJava完整流程*********************************************/
         //创建观察者
         Observer<String> observer = new Observer<String>() {
+
+            @Override
+            public void onSubscribe(Disposable d) {
+
+            }
+
+            @Override
+            public void onComplete() {
+                Log.d(tag, "Completed!");
+
+            }
+
             @Override
             public void onNext(String s) {
                 Log.d(tag, "Item: " + s);
             }
 
-            @Override
-            public void onCompleted() {
-                Log.d(tag, "Completed!");
-            }
+
 
             @Override
             public void onError(Throwable e) {
@@ -47,12 +62,17 @@ public class RxJavaTestActivity extends Activity {
         // 创建观察者
         Subscriber<String> subscriber = new Subscriber<String>() {
             @Override
+            public void onSubscribe(Subscription s) {
+
+            }
+
+            @Override
             public void onNext(String s) {
                 Log.d(tag, "Item: " + s);
             }
 
             @Override
-            public void onCompleted() {
+            public void onComplete() {
                 Log.d(tag, "Completed!");
             }
 
@@ -62,16 +82,19 @@ public class RxJavaTestActivity extends Activity {
             }
         };
         //创建被观察者
-        Observable observable = Observable.create(new Observable.OnSubscribe<String>() {
-            @Override
-            public void call(Subscriber<? super String> subscriber) {
-                subscriber.onNext("Hello");
-                subscriber.onNext("Hi");
-                subscriber.onNext("Aloha");
-                subscriber.onCompleted();
-            }
-        });
-//        Observable observable = Observable.just("Hello", "Hi", "Aloha");//快捷创建被观察者
+//        Observable observable = Observable.create(new Observable.OnSubscribe<String>() {
+//
+//
+//
+//            @Override
+//            public void call(Subscriber<? super String> subscriber) {
+//                subscriber.onNext("Hello");
+//                subscriber.onNext("Hi");
+//                subscriber.onNext("Aloha");
+//                subscriber.onComplete();
+//            }
+//        });
+        Observable observable = Observable.just("Hello", "Hi", "Aloha");//快捷创建被观察者
 //        String[] words = {"Hello", "Hi", "Aloha"};
 //        Observable observable = Observable.from(words);//快捷创建被观察者
         //订阅
@@ -79,7 +102,7 @@ public class RxJavaTestActivity extends Activity {
          // 或者：
         //observable.subscribe(subscriber);
 
-*/
+
 
 /***********************************************RxJava-不完整定义的回调**************************************************************
         //创建被观察者

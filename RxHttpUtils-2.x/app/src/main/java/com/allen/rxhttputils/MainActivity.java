@@ -105,7 +105,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                             protected boolean isHideToast() {
                                 return false;
                             }
-
                             //tag下的一组或一个请求，用来处理一个页面的所以请求或者某个请求
                             //设置一个tag就行就可以取消当前页面所有请求或者某个请求了
                             @Override

@@ -19,6 +19,12 @@ public class TreadActivity extends Activity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+//        test1();
+        method1();
+    }
+
+    public  void method1(){
         /**********************************FixedThreadPool****************************************************/
         ExecutorService executor1 = Executors.newFixedThreadPool(3);
         /**********************************CachedThreadPool****************************************************/
@@ -39,8 +45,8 @@ public class TreadActivity extends Activity {
                 }
             });
         }
-//        test1();
     }
+
 
 /********************************************Thread********************************************
     private  int count = 1000;

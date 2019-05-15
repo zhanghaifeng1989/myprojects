@@ -1,1 +1,1 @@
-include ':app', ':xmltojsonlib', ':JavaTest', ':library'
+include ':app', ':xmltojsonlib', ':JavaTest', ':library', ':hotfix'

@@ -16,6 +16,7 @@ import android.os.IBinder;
 import android.os.Message;
 import android.os.RemoteException;
 import android.os.SystemClock;
+import android.support.annotation.Nullable;
 import android.util.Log;
 import android.widget.Toast;
 
@@ -47,9 +48,9 @@ public class Service1 extends Service {
         };
     };
 
-    /**
-     * 使用aidl 启动Service2
-     */
+//    /**
+//     * 使用aidl 启动Service2
+//     */
     private StrongService startS2 = new StrongService.Stub() {
         @Override
         public void stopService() throws RemoteException {
@@ -121,8 +122,9 @@ public class Service1 extends Service {
                 "com.example.administrator.mytest.DoubleService.Service2");
         if (isRun == false) {
             try {
-                startS2.startService();
-            } catch (RemoteException e) {
+               startS2.startService();
+
+            } catch (Exception e) {
                 e.printStackTrace();
             }
         }
@@ -187,5 +189,6 @@ public class Service1 extends Service {
     public IBinder onBind(Intent intent) {
         return (IBinder) startS2;
     }
+
 
 }

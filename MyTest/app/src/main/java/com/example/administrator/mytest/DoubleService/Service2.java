@@ -16,6 +16,7 @@ import android.os.IBinder;
 import android.os.Message;
 import android.os.RemoteException;
 import android.os.SystemClock;
+import android.support.annotation.Nullable;
 import android.util.Log;
 import android.widget.Toast;
 
@@ -114,8 +115,14 @@ public class Service2 extends Service {
                 "com.example.administrator.mytest.DoubleService.Service1");
         if (isRun == false) {
             try {
-                startS1.startService();
-            } catch (RemoteException e) {
+//                startS1.startService();
+                Intent i = new Intent(getBaseContext(), Service1.class);
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                    getBaseContext().startForegroundService(i);
+                } else {
+                    getBaseContext().startService(i);
+                }
+            } catch (Exception e) {
                 e.printStackTrace();
             }
         }
@@ -154,5 +161,9 @@ public class Service2 extends Service {
         return (IBinder) startS1;
     }
 
-
+//    @Nullable
+//    @Override
+//    public IBinder onBind(Intent intent) {
+//        return null;
+//    }
 }

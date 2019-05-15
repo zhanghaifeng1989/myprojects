@@ -29,7 +29,6 @@ public class Okhttputils {
     //登录
     public void kaolalogin(){
         OkHttpClient okHttpClient = new OkHttpClient();
-
         RequestBody requestBody = new FormBody.Builder()
                 .add("grant_type", "password")
                 .add("username", "08@08.com$kaola")

@@ -21,13 +21,13 @@ public class DoubleServiceActivity extends Activity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Intent i1 = new Intent(DoubleServiceActivity.this, Service1.class);
-        Intent i2 = new Intent(DoubleServiceActivity.this, Service2.class);
+//        Intent i2 = new Intent(DoubleServiceActivity.this, Service2.class);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             startForegroundService(i1);
-            startForegroundService(i2);
+//            startForegroundService(i2);
         } else {
             startService(i1);
-            startService(i2);
+//            startService(i2);
         }
 
     }
